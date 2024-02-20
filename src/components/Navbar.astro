@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import { EsLogo } from "../images";
+---
+
+<nav class="">
+    <div
+    class="flex justify-around"
+  >
+    <a href="/EscoSupplies">
+        <Image src={EsLogo} alt="Logo" width={203} height={26} />
+      </a>
+    <!-- Hamburger -->
+    <!-- Navlinks -->
+    <div>
+      <ul class="">
+        <li>
+          <a href="/EscoSupplies/brands">
+            <span>Brands</span>
+          </a>
+        </li>
+        <li>
+          <a href="/EscoSupplies/indoor">
+            <span>Indoor Lighting</span>
+          </a>
+        </li>
+        <li>
+          <a href="/EscoSupplies/outdoor">
+            <span>Outdoor Lighting</span>
+          </a>
+        </li>
+        <li>
+          <a href="/EscoSupplies/controls">
+            <span>Lighting Controls</span>
+          </a>
+        </li>
+        <li>
+          <a href="/EscoSupplies/contact">
+            <span>contact</span>
+          </a>
+        </li>
+        <li>
+          <a href="/EscoSupplies/about">
+            <span>About</span>
+          </a>
+        </li>
+</ul>
+    </div>
+</nav>
+
+<style>
+    * {
+        /* border: 1px solid red; */
+    }
+</style>
