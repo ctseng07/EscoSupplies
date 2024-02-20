@@ -3,17 +3,31 @@ import { Image } from "astro:assets";
 import { EsLogo } from "../images";
 ---
 
-<nav class="">
+<nav class="max-container">
     <div
-    class="flex justify-between"
+    class="flex justify-between w-full items-center flex-wrap px-4 max-w-screen-xl mt-12 mx-auto"
   >
     <a href="/EscoSupplies">
         <Image src={EsLogo} alt="Logo" width={203} height={26} />
       </a>
     <!-- Hamburger -->
+    <button
+    data-collapse-toggle="navbar-cta"
+    type="button"
+    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color"
+    aria-controls="navbar-cta"
+    aria-expanded="false"
+  >
+    <span class="sr-only">Open main menu</span>
+    <div class="hidden max-lg:block">
+      <span class="material-symbols-outlined"> menu</span>
+    </div>
+  </button>
+
     <!-- Navlinks -->
-    <div>
-      <ul class="">
+    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full"
+    id="navbar-cta">
+      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2">
         <li>
           <a href="/EscoSupplies/brands">
             <span>Brands</span>
@@ -36,7 +50,7 @@ import { EsLogo } from "../images";
         </li>
         <li>
           <a href="/EscoSupplies/contact">
-            <span>contact</span>
+            <span>Contact</span>
           </a>
         </li>
         <li>

@@ -1,1 +1,1 @@
-export { default as EsLogo } from "./ES-Logo.jpg";
+export { default as EsLogo } from "./ES-Logo.png";
