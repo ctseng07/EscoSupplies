@@ -1,8 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import CompanyCard from "../components/CompanyCard.astro";
+import { Image } from "astro:assets";
+import companies from "../data/companies.json";
 ---
 
 <Layout title="Esco Supplies">
-
+    <h2 class="text-center mb-8">Companies</h2>
+    <section class="bg-[--button]">
+   <div class="max-container p-8 rounded-2xl">
+        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+            {
+                companies.map((card) => (
+                    <CompanyCard
+                        imagePath={card.imagePath}
+                        altText={card.altText}
+                    />
+                ))
+            }
+        </ul>
+        </div>
+    </section>
 </Layout>
-
