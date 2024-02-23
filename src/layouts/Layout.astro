@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar.astro";
 import "flowbite";
 const { title, metaDescription } = Astro.props;
+import '@fontsource/lato';
+import '@fontsource-variable/montserrat';
 ---
 
 <!doctype html>
@@ -23,7 +25,10 @@ const { title, metaDescription } = Astro.props;
 	</head>
 	<body>
 		<Navbar />
-		<slot />
+		<main class="mt-36">
+			<slot />
+		</main>
+		
 	</body>
 </html>
 <style is:global>
@@ -32,8 +37,8 @@ const { title, metaDescription } = Astro.props;
 
 	:root {
 		--button: #FFB600;
-		--accent-color: #888888;
-		--accent-light: #999999;
+		--gray: #888888;
+		--light-gray: #999999;
 		--red: #DB1F00;
 	}
 
@@ -58,6 +63,56 @@ const { title, metaDescription } = Astro.props;
     background: #fff;
     background-size: 224px;
     height: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .body,
+  button {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 24px;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
   }
 
 	@layer components {

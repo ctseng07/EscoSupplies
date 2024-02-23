@@ -1,15 +1,28 @@
 ---
+import Button from "./Button.astro";
 import { Image } from "astro:assets";
 import { EsLogo } from "../images";
 ---
 
 <nav class="max-container">
     <div
-    class="flex justify-between w-full items-center flex-wrap px-4 max-w-screen-xl mt-12 mx-auto"
+    class=" w-full items-center flex-wrap px-4 max-w-screen-xl mt-12 mx-auto"
   >
+<div class="flex justify-between">
     <a href="/EscoSupplies">
         <Image src={EsLogo} alt="Logo" width={203} height={26} />
       </a>
+
+      <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+        <div class="max-lg:hidden">
+          <a href="/ConserveEnergy/contact"
+            ><Button id="scheduleBtn" isfilled theme="white">
+              Contact us
+            </Button></a
+          >
+        </div>
+      </div>
+
     <!-- Hamburger -->
     <button
     data-collapse-toggle="navbar-cta"
@@ -23,14 +36,14 @@ import { EsLogo } from "../images";
       <span class="material-symbols-outlined"> menu</span>
     </div>
   </button>
-
+</div>
     <!-- Navlinks -->
-    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full"
+    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4"
     id="navbar-cta">
-      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2">
+      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl">
         <li>
           <a href="/EscoSupplies/brands">
-            <span>Brands</span>
+            <p class="body">Brands</p>
           </a>
         </li>
         <li>
