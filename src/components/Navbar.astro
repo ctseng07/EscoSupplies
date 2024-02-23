@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import { EsLogo } from "../images";
 ---
 
-<nav class="max-container bg-red-900">
+<nav class="bg-[--button]">
     <div
-    class=" w-full items-center flex-wrap px-4 max-w-screen-xl mt-12 mx-auto"
+    class=" w-full items-center flex-col flex-wrap p-4 max-w-screen-xl mt-12 mx-auto max-container"
   >
 <div class="flex justify-between">
     <a href="/EscoSupplies">
@@ -38,9 +38,9 @@ import { EsLogo } from "../images";
   </button>
 </div>
     <!-- Navlinks -->
-    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4"
+    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-black"
     id="navbar-cta">
-      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl">
+      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl w-full">
         <li>
           <a href="/EscoSupplies/brands">
             <p class="">Brands</p>
