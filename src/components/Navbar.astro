@@ -5,11 +5,11 @@ import { EsLogo } from "../images";
 ---
 
 <nav class="bg-[--button]">
-    <div
-    class=" w-full items-center flex-col flex-wrap p-4 max-w-screen-xl mt-12 mx-auto max-container"
+  <div
+    class="w-full items-center flex-col flex-wrap p-4 max-w-screen-xl mt-12 mx-auto max-container"
   >
-<div class="flex justify-between">
-    <a href="/EscoSupplies">
+    <div class="flex justify-between">
+      <a href="/EscoSupplies">
         <Image src={EsLogo} alt="Logo" width={203} height={26} />
       </a>
 
@@ -23,24 +23,28 @@ import { EsLogo } from "../images";
         </div>
       </div>
 
-    <!-- Hamburger -->
-    <button
-    data-collapse-toggle="navbar-cta"
-    type="button"
-    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color"
-    aria-controls="navbar-cta"
-    aria-expanded="false"
-  >
-    <span class="sr-only">Open main menu</span>
-    <div class="hidden max-lg:block">
-      <span class="material-symbols-outlined"> menu</span>
+      <!-- Hamburger -->
+      <button
+        data-collapse-toggle="navbar-cta"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color"
+        aria-controls="navbar-cta"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <div class="hidden max-lg:block">
+          <span class="material-symbols-outlined"> menu</span>
+        </div>
+      </button>
     </div>
-  </button>
-</div>
     <!-- Navlinks -->
-    <div class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-black"
-    id="navbar-cta">
-      <ul class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl w-full">
+    <div
+      class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-black"
+      id="navbar-cta"
+    >
+      <ul
+        class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl w-full"
+      >
         <li>
           <a href="/EscoSupplies/brands">
             <p class="">Brands</p>
@@ -52,7 +56,7 @@ import { EsLogo } from "../images";
           </a>
         </li>
         <li>
-          <a href="/EscoSupplies/outdoor">
+          <a href="/EscoSupplies/outdoor-lighting">
             <span>Outdoor Lighting</span>
           </a>
         </li>
@@ -71,12 +75,13 @@ import { EsLogo } from "../images";
             <span>About</span>
           </a>
         </li>
-</ul>
+      </ul>
     </div>
-</nav>
+  </div>
 
-<style>
+  <style>
     * {
-        /* border: 1px solid red; */
+      /* border: 1px solid red; */
     }
-</style>
+  </style>
+</nav>
