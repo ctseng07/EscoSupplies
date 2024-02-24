@@ -20,3 +20,11 @@ export { default as company18 } from "./company18.png";
 export { default as company19 } from "./company19.png";
 export { default as company20 } from "./company20.png";
 export { default as company21 } from "./company21.png";
+
+export { default as areaLight } from "./areaLight.png";
+export { default as barnLight } from "./barnLight.png";
+export { default as canopyLight } from "./canopyLight.png";
+export { default as floodLight } from "./floodLight.png";
+export { default as parkingLight } from "./parkingLight.png";
+export { default as sportsLight } from "./sportsLight.png";
+export { default as wallpack } from "./wallpack.png";
