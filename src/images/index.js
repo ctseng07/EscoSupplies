@@ -28,3 +28,13 @@ export { default as floodLight } from "./floodLight.png";
 export { default as parkingLight } from "./parkingLight.png";
 export { default as sportsLight } from "./sportsLight.png";
 export { default as wallpack } from "./wallpack.png";
+
+export { default as bulb } from "./bulb.jpg";
+export { default as downlight } from "./downlight.jpg";
+export { default as exitSign } from "./exitSign.jpg";
+export { default as tubes } from "./tubes.jpeg";
+export { default as flatPanel } from "./flatPanel.png";
+export { default as linearLight } from "./linearLight.png";
+export { default as troffer } from "./troffer.png";
+export { default as ufo } from "./ufo.png";
+export { default as vaporLight } from "./vaporLight.png";
