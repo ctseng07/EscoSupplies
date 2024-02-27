@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Area Lights",
+    "imagePath": "/src/images/areaLight.png",
+    "altText": "area light"
+  },
+  {
+    "name": "Canopy Lights",
+    "imagePath": "/src/images/canopyLight.png",
+    "altText": "canopy light"
+  },
+  {
+    "name": "flood Lights",
+    "imagePath": "/src/images/floodLight.png",
+    "altText": "flood light"
+  },
+  {
+    "name": "parking lot Lights",
+    "imagePath": "/src/images/parkingLight.png",
+    "altText": "parking light"
+  },
+  {
+    "name": "barn Lights",
+    "imagePath": "/src/images/barnLight.png",
+    "altText": "barn light"
+  },
+  {
+    "name": "sports Lighting",
+    "imagePath": "/src/images/sportsLight.png",
+    "altText": "sports light"
+  },
+  {
+    "name": "wallpacks",
+    "imagePath": "/src/images/wallpack.png",
+    "altText": "wallpack"
+  }
+]
