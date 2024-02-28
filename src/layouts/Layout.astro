@@ -2,69 +2,68 @@
 import Navbar from "../components/Navbar.astro";
 import "flowbite";
 const { title, metaDescription } = Astro.props;
-import '@fontsource/lato';
-import '@fontsource-variable/montserrat';
+import "@fontsource/lato";
+import "@fontsource-variable/montserrat";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={metaDescription} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<script
-			is:inline
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-		></script>
-		<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-	  />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
-		<main class="mt-36 max-sm:mt-12">
-			<slot />
-		</main>
-		
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={metaDescription} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <main class="mt-36 max-sm:mt-12">
+      <slot />
+    </main>
+  </body>
 </html>
 <style is:global>
-	@tailwind base;
-	@tailwind components;
+  @tailwind base;
+  @tailwind components;
 
-	:root {
-		--button: #FFB600;
-		--gray: #888888;
-		--light-gray: #EEEEEE;
-		--red: #DB1F00;
-    --white: #FFFFFF;
-		--dark: #444444;
-		--black: #000000;
-		--light-green: #E7F5EE;
-		--green: #0F6812;
-	}
+  :root {
+    --button: #ffb600;
+    --gray: #888888;
+    --light-gray: #eeeeee;
+    --red: #db1f00;
+    --white: #ffffff;
+    --dark: #444444;
+    --black: #000000;
+    --light-blue: #7a889f;
+    --green: #0f6812;
+  }
 
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-	* {
-		margin: 0;
+  * {
+    margin: 0;
     padding: 0;
-	}
+  }
 
-	body {
-		line-height: 1.5;
-		-webkit-font-smoothing: antialiased;
-		height: 100%;
-	}
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+  }
 
-	html {
+  html {
     font-family: "Montserrat", system-ui, sans-serif;
     background: #fff;
     background-size: 224px;
@@ -128,7 +127,7 @@ import '@fontsource-variable/montserrat';
     overflow-wrap: break-word;
   }
 
-	@layer components {
+  @layer components {
     .max-container {
       max-width: 1192px;
       margin: 0 auto;
