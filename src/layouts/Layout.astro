@@ -23,9 +23,9 @@ import '@fontsource-variable/montserrat';
 	  />
 		<title>{title}</title>
 	</head>
-	<body class='bg-[--button]'>
+	<body>
 		<Navbar />
-		<main class="mt-36">
+		<main class="mt-36 max-sm:mt-12">
 			<slot />
 		</main>
 		
@@ -38,10 +38,13 @@ import '@fontsource-variable/montserrat';
 	:root {
 		--button: #FFB600;
 		--gray: #888888;
-		--light-gray: #999999;
+		--light-gray: #EEEEEE;
 		--red: #DB1F00;
     --white: #FFFFFF;
+		--dark: #444444;
 		--black: #000000;
+		--light-green: #E7F5EE;
+		--green: #0F6812;
 	}
 
 	*,
@@ -92,6 +95,13 @@ import '@fontsource-variable/montserrat';
     font-size: 18px;
     font-weight: 500;
     line-height: 23px;
+  }
+
+  .caption {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--red);
   }
 
   .body,
