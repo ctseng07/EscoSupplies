@@ -20,6 +20,7 @@ export { default as company18 } from "./company18.png";
 export { default as company19 } from "./company19.png";
 export { default as company20 } from "./company20.png";
 export { default as company21 } from "./company21.png";
+export { default as lnp } from "./Lnp.png";
 
 export { default as areaLight } from "./areaLight.png";
 export { default as barnLight } from "./barnLight.png";
@@ -38,3 +39,4 @@ export { default as linearLight } from "./linearLight.png";
 export { default as troffer } from "./troffer.png";
 export { default as ufo } from "./ufo.png";
 export { default as vaporLight } from "./vaporLight.png";
+export { default as contact } from "./contact.jpeg";
