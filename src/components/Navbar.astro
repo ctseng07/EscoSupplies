@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import { EsLogo } from "../images";
 ---
 
-<nav class="bg-[--button]">
+<nav class="bg-[--light-gray]">
   <div
     class="w-full items-center flex-col flex-wrap p-4 max-w-screen-xl mt-12 mx-auto max-container"
   >
@@ -15,7 +15,7 @@ import { EsLogo } from "../images";
 
       <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
         <div class="max-lg:hidden">
-          <a href="/ConserveEnergy/contact"
+          <a href="/EscoSupplies/contact"
             ><Button id="scheduleBtn" isfilled theme="white">
               Contact us
             </Button></a
@@ -39,40 +39,53 @@ import { EsLogo } from "../images";
     </div>
     <!-- Navlinks -->
     <div
-      class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-black"
+      class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-[--red]"
       id="navbar-cta"
     >
       <ul
         class="flex flex-col font-medium p-4 lg:p-0 my-4 border-2 border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 gap-2 max-md:shadow-xl w-full"
       >
         <li>
-          <a href="/EscoSupplies/brands">
-            <p class="">Brands</p>
+          <a href="/EscoSupplies/brands"
+            class="block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1"
+            aria-current="page">
+            <span
+              class="bg-left-bottom lg:bg-gradient-to-r from-[--button] to-[--button] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-[--dark]"
+            >Brands</span>
           </a>
         </li>
         <li>
-          <a href="/EscoSupplies/indoor">
-            <span>Indoor Lighting</span>
+          <a href="/EscoSupplies/indoor-lighting"
+            class="block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1"
+            aria-current="page">
+            <span
+              class="bg-left-bottom lg:bg-gradient-to-r from-[--button] to-[--button] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-[--dark]"
+            >Indoor Lighting</span>
           </a>
         </li>
         <li>
-          <a href="/EscoSupplies/outdoor-lighting">
-            <span>Outdoor Lighting</span>
+          <a href="/EscoSupplies/outdoor-lighting"            
+          class="block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          aria-current="page">
+          <span
+            class="bg-left-bottom lg:bg-gradient-to-r from-[--button] to-[--button] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-[--dark]"
+          >Outdoor Lighting</span>
           </a>
         </li>
         <li>
-          <a href="/EscoSupplies/controls">
-            <span>Lighting Controls</span>
+          <a href="/EscoSupplies/controls"            class="block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          aria-current="page">
+          <span
+            class="bg-left-bottom lg:bg-gradient-to-r from-[--button] to-[--button] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-[--dark]"
+          >Lighting Controls</span>
           </a>
         </li>
         <li>
-          <a href="/EscoSupplies/contact">
-            <span>Contact</span>
-          </a>
-        </li>
-        <li>
-          <a href="/EscoSupplies/about">
-            <span>About</span>
+          <a href="/EscoSupplies/about"            class="block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          aria-current="page">
+          <span
+            class="bg-left-bottom lg:bg-gradient-to-r from-[--button] to-[--button] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-[--dark]"
+          >About</span>
           </a>
         </li>
       </ul>
