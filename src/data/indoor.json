@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Downlights",
+    "imagePath": "/src/images/downlight.jpg",
+    "altText": "downlight"
+  },
+  {
+    "name": "Flat Panel Lights",
+    "imagePath": "/src/images/flatPanel.png",
+    "altText": "flat panel light"
+  },
+  {
+    "name": "High Bays",
+    "imagePath": "/src/images/ufo.png",
+    "altText": "high bay"
+  },
+  {
+    "name": "Linear Lights",
+    "imagePath": "/src/images/linearLight.png",
+    "altText": "linear light"
+  },
+  {
+    "name": "Troffer Lights",
+    "imagePath": "/src/images/troffer.png",
+    "altText": "Troffer light"
+  },
+  {
+    "name": "Vapor tight lights",
+    "imagePath": "/src/images/vaporLight.png",
+    "altText": "sports light"
+  },
+  {
+    "name": "Bulbs",
+    "imagePath": "/src/images/bulb.jpg",
+    "altText": "lightbulb"
+  },
+  {
+    "name": "Tubes",
+    "imagePath": "/src/images/tubes.jpeg",
+    "altText": "tubes"
+  },
+  {
+    "name": "Exit Signs",
+    "imagePath": "/src/images/exitSign.jpg",
+    "altText": "exit signs"
+  }
+]
