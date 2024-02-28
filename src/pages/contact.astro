@@ -1,0 +1,173 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import { contact } from "../images";
+
+const metaData = {
+  title: "Contact Us | Conserve Energy",
+  description:
+    "We've helped thousands of businesses lower their energy costs over the years. Contact us to see how we can help you.",
+};
+---
+
+<Layout title={metaData.title} metaDescription={metaData.description}>
+  <section class="max-container">
+    <div class="flex justify-center items-center">
+      <div class="text-center w-full lg:w-9/12 px-6">
+        <h2 class="max-sm:text-4xl text-[--red]">Esco Supplies</h2>
+
+        <p class="mt-6">
+            is a nationwide distributor of both LED and fluorescent-based commercial lighting products.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="flex gap-8 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4"
+    >
+      <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
+        <Image
+          src={contact}
+          alt="contactImg"
+          class="w-full object-cover h-full"
+        />
+      </div>
+
+      <div class="form-wrapper flex-1">
+        <div class="mb-8">
+          <div class="caption mb-2">Contact</div>
+
+          <p class="mb-8">
+            Fill in the information below and we will reach out as soon as we
+            receive your contact information.
+          </p>
+        </div>
+
+        <div class="">
+          <form
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="e58412c6-15cb-4142-a129-a79382f45736"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Website"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://samsonc89.github.io/ConserveEnergy/thanks"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none;"
+            />
+
+            <input
+              type="text"
+              name="username"
+              placeholder="Name*"
+              class="border py-3 pl-4 rounded-lg w-full mb-4"
+              required
+            />
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone*"
+              class="border py-3 pl-4 rounded-lg w-full mb-4"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              class="border py-3 pl-4 rounded-lg mb-4 w-full"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="When's the best time to reach out?"
+              class="border py-3 pl-4 rounded-lg mb-4 w-full"></textarea>
+          </form>
+
+          <Button
+            class="w-full flex justify-center"
+            id="scheduleBtn"
+            theme="button"
+            type="submit"
+          >
+            Submit
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY INFO -->
+  <div
+    class="flex justify-center items-stretch flex-wrap my-6 p-4 gap-4 max-lg:mt-8 bg-[--light-gray] max-lg:mx-4 max-lg:rounded-2xl"
+  >
+    <div class="rounded-xl shadow-2xl p-5 max-sm:w-full cursor-pointer bg-white hover:scale-110">
+      <h4 class="">Seattle Headquarters</h4>
+      <p class="mt-2">
+        <a
+          href="https://www.google.com/maps/place/1045+Andover+Park+E+%23200,+Tukwila,+WA+98188/"
+          class="underline text-blue-500"
+          >1059 Andover Park E.<br />Tukwila, WA 98188</a
+        >
+      </p>
+    </div>
+    <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
+    <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
+        <h4 class="">Office</h4>
+        <p class="mt-2">(253) 850-6055</p>
+      </div>
+   
+      <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
+        <h4 class="">Toll Free</h4>
+        <p class="mt-2">(888) 989-ESCO</p>
+      </div>
+      </div>    
+      <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
+      <div class="rounded-xl shadow-2xl p-5 bg-white max-sm:w-full hover:scale-110 cursor-pointer">
+        <h4 class="">Fax</h4>
+        <p class="mt-2">(253) 854-4827</p>
+      </div>
+      <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
+          <h4 class="">Email</h4>
+          <p class="mt-2"><a href="mailto:info@escosupplies.com">info@escosupplies.com</a></p>
+        </div>
+    </div>
+  </div>
+
+  <section class="max-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.197091997638!2d-122.25514052309425!3d47.44709739897771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549042da3030ba39%3A0xf963f23a2a8f8ac3!2sConserve%20Energy%2C%20LLC!5e0!3m2!1sen!2sus!4v1705669991610!5m2!1sen!2sus"
+      class="w-full rounded-2xl"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <style>
+    * {
+    /* border: 1px solid red; */
+    }
+  </style>
+</Layout>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
