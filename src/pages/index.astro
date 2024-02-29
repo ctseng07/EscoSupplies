@@ -5,27 +5,9 @@ import companies from "../data/companies.json";
 ---
 
 <Layout title="Esco Supplies">
-<<<<<<< HEAD
-  <h2
-    class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red]"
-  >
-    Companies we are distributors for:
-  </h2>
-  <section class="bg-[--light-blue] max-container rounded-2xl">
-    <div class="max-container p-8 rounded-2xl">
-      <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
-        {
-          companies.map((card) => (
-            <CompanyCard imagePath={card.imagePath} altText={card.altText} />
-          ))
-        }
-      </ul>
-    </div>
-  </section>
-=======
-    <h2 class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red]">Companies we are distributors for:</h2>
-    <section class="bg-[--light-green] max-container rounded-2xl">
-   <div class="max-container p-8 rounded-2xl">
+    <h2 class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red] max-sm:text-2xl max-lg:px-2">Companies we are distributors for:</h2>
+    <section class="bg-[--light-blue] max-container rounded-2xl">
+   <div class="max-container p-8 rounded-2xl max-sm:px-2">
         <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
             {
                 companies.map((card) => (
@@ -39,5 +21,10 @@ import companies from "../data/companies.json";
         </ul>
         </div>
     </section>
->>>>>>> 95f436b (Change LNP logo)
 </Layout>
+
+<style>
+  * {
+  /* border: 1px solid red; */
+  }
+</style>

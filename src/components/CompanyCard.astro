@@ -13,11 +13,11 @@ if (!images[imagePath])
 ---
 
 <li>
-  <div class=` rounded-2xl ${extraClasses}`>
+  <div class=`card ${extraClasses}`>
     <Image
       src={images[imagePath]()}
       alt={altText}
-      class=`object-cover w-full rounded-2xl shadow-2xl cursor-pointer hover:scale-110 ${extraClasses}`
+      class='object-cover w-full rounded-2xl'
     />
   </div>
 </li>
@@ -27,4 +27,9 @@ if (!images[imagePath])
     height: 100%;
     object-fit: cover;
   }
+
+  * {
+    /* border: 1px solid red; */
+  }
 </style>
+

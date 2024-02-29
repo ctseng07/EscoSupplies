@@ -1,20 +1,23 @@
 [
     {
       "imagePath": "/src/images/company1.png",
-      "altText": "green creative"
+      "altText": "green creative",
+      "extraClasses": "h-full"
     },
     {
       "imagePath": "/src/images/company2.png",
-      "altText": "nuvo lighting"
+      "altText": "nuvo lighting",
+      "extraClasses": "h-full"
     },
     {
       "imagePath": "/src/images/Lnp.png",
       "altText": "lights n plastics",
-      "extraClasses": "p-6"
+      "extraClasses": "p-2 h-full bg-white"
     },
     {
       "imagePath": "/src/images/company4.png",
-      "altText": "efficient lighting"
+      "altText": "efficient lighting",
+      "extraClasses": "h-full"
     },
     {
       "imagePath": "/src/images/company5.png",
