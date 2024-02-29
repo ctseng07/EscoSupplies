@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import { EsLogo } from "../images";
 ---
 
-<nav class="bg-[--light-gray]">
+<nav class="bg-[--light-blue]">
   <div
     class="w-full items-center flex-col flex-wrap p-4 max-w-screen-xl mt-12 mx-auto max-container"
   >
@@ -13,7 +13,7 @@ import { EsLogo } from "../images";
         <Image src={EsLogo} alt="Logo" width={203} height={26} />
       </a>
 
-      <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+      <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse up">
         <div class="max-lg:hidden">
           <a href="/EscoSupplies/contact"
             ><Button id="scheduleBtn" isfilled theme="white">
@@ -39,7 +39,7 @@ import { EsLogo } from "../images";
     </div>
     <!-- Navlinks -->
     <div
-      class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-[--red]"
+      class="items-center justify-between hidden lg:flex lg:w-auto lg:order-1 w-full mt-4 mx-4 border-b-2 border-[--red] uppercase"
       id="navbar-cta"
     >
       <ul
