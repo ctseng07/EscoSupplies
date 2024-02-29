@@ -17,6 +17,11 @@ interface Props extends HTMLAttributes<"button"> {
     | "button"
     | "white"
     | "gray"
+    | "light-green"
+    | "light-blue"
+    | "dark"
+    | "black"
+    | "green"
     | "red";
   classes?: string;
 }
@@ -76,7 +81,8 @@ const foreground =
   button.filled {
     background-color: var(--bkg);
     color: var(--red);
-    border: 1px solid var(--red);
+    border: 1px solid var(--dark);
+    font-weight: 600;
   }
 
   button:focus {
