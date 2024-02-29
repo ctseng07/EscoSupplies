@@ -5,6 +5,7 @@ import companies from "../data/companies.json";
 ---
 
 <Layout title="Esco Supplies">
+<<<<<<< HEAD
   <h2
     class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red]"
   >
@@ -21,4 +22,22 @@ import companies from "../data/companies.json";
       </ul>
     </div>
   </section>
+=======
+    <h2 class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red]">Companies we are distributors for:</h2>
+    <section class="bg-[--light-green] max-container rounded-2xl">
+   <div class="max-container p-8 rounded-2xl">
+        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+            {
+                companies.map((card) => (
+                    <CompanyCard
+                        imagePath={card.imagePath}
+                        altText={card.altText}
+                    extraClasses={card.extraClasses}
+                    />
+                ))
+            }
+        </ul>
+        </div>
+    </section>
+>>>>>>> 95f436b (Change LNP logo)
 </Layout>

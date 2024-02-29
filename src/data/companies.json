@@ -8,8 +8,9 @@
       "altText": "nuvo lighting"
     },
     {
-      "imagePath": "/src/images/company3.png",
-      "altText": "lights n plastics"
+      "imagePath": "/src/images/Lnp.png",
+      "altText": "lights n plastics",
+      "extraClasses": "p-6"
     },
     {
       "imagePath": "/src/images/company4.png",
