@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
-import { contact } from "../images";
+import { contact, contactBanner } from "../images";
 
 const metaData = {
   title: "Contact Us | Esco Supplies",
@@ -14,25 +14,30 @@ const metaData = {
 <Layout title={metaData.title} metaDescription={metaData.description}>
   <section class="max-container">
     <div class="flex justify-center items-center">
-      <div class="text-center w-full lg:w-9/12 px-6">
+      <div class="text-center w-full px-4">
+        
         <h2 class="max-sm:text-4xl text-[--red]">Esco Supplies</h2>
-
-        <p class="mt-6">
-            is a nationwide distributor of both LED and fluorescent-based commercial lighting products.
+        
+        <p class="my-4">
+          is a nationwide distributor of both LED and fluorescent-based
+          commercial lighting products.
         </p>
+
+        <div class="rounded-2xl overflow-hidden">
+          <Image src={contactBanner} alt="contactImg" 
+          class="w-full"/>
+        </div>
       </div>
     </div>
 
-    <div
-      class="flex gap-8 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4"
-    >
-      <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
+    <div class="flex gap-8 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4">
+      <!-- <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
         <Image
           src={contact}
           alt="contactImg"
           class="w-full object-cover h-full"
         />
-      </div>
+      </div> -->
 
       <div class="form-wrapper flex-1">
         <div class="mb-8">
@@ -95,6 +100,12 @@ const metaData = {
               class="border py-3 pl-4 rounded-lg mb-4 w-full"
               required
             />
+            <input
+            type="text"
+            name="text"
+            placeholder="Company Name"
+            class="border py-3 pl-4 rounded-lg w-full mb-4"
+          />
             <textarea
               name="message"
               placeholder="When's the best time to reach out?"
@@ -118,9 +129,14 @@ const metaData = {
   <div
     class="flex justify-center items-stretch flex-wrap my-6 p-4 gap-4 max-lg:mt-8 bg-[--light-gray] max-lg:mx-4 max-lg:rounded-2xl"
   >
-    <div class="rounded-xl shadow-2xl p-5 max-sm:w-full cursor-pointer bg-white hover:scale-110">
+    <div
+      class="rounded-xl shadow-2xl p-5 max-sm:w-full cursor-pointer bg-white hover:scale-110"
+    >
+      <span class="material-symbols-outlined text-3xl text-center w-full">
+        location_city
+      </span>
       <h4 class="">Seattle Headquarters</h4>
-      <p class="mt-2">
+      <p class="mt-2 text-center">
         <a
           href="https://www.google.com/maps/place/1045+Andover+Park+E+%23200,+Tukwila,+WA+98188/"
           class="underline text-blue-500"
@@ -129,43 +145,65 @@ const metaData = {
       </p>
     </div>
     <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
-    <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
-        <h4 class="">Office</h4>
-        <p class="mt-2">(253) 850-6055</p>
+      <div
+        class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer"
+      >
+        <span class="material-symbols-outlined text-3xl text-center w-full">
+          call
+        </span>
+        <h4 class="text-center">Office</h4>
+        <p class="mt-2 text-center">(253) 850-6055</p>
       </div>
-   
-      <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
-        <h4 class="">Toll Free</h4>
+
+      <div
+        class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer"
+      >
+        <span class="material-symbols-outlined text-3xl text-center w-full">
+          call
+        </span>
+        <h4 class="text-center">Toll-Free</h4>
         <p class="mt-2">(888) 989-ESCO</p>
       </div>
-      </div>    
-      <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
-      <div class="rounded-xl shadow-2xl p-5 bg-white max-sm:w-full hover:scale-110 cursor-pointer">
-        <h4 class="">Fax</h4>
-        <p class="mt-2">(253) 854-4827</p>
+    </div>
+    <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
+      <div
+        class="rounded-xl shadow-2xl p-5 bg-white max-sm:w-full hover:scale-110 cursor-pointer"
+      >
+        <span class="material-symbols-outlined text-3xl text-center w-full">
+          date_range
+        </span>
+        <p class="mt-2 text-center">Mon - Sat: <br />8:00am - 4:30pm</p>
       </div>
-      <div class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer">
-          <h4 class="">Email</h4>
-          <p class="mt-2"><a href="mailto:info@escosupplies.com">info@escosupplies.com</a></p>
-        </div>
+    </div>
+    <div
+      class="rounded-xl shadow-2xl p-5 max-sm:w-full bg-white hover:scale-110 cursor-pointer"
+    >
+      <span class="material-symbols-outlined text-3xl text-center w-full">
+        mail
+      </span>
+      <p class="mt-2">
+        <a href="mailto:info@escosupplies.com">info@escosupplies.com</a>
+      </p>
     </div>
   </div>
-
-  <section class="max-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.201247067094!2d-122.25503592403575!3d47.44701639898454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905cdcb1919977%3A0x154def00769c3d7e!2sESCO%20Supplies!5e0!3m2!1sen!2sus!4v1709137976029!5m2!1sen!2sus" 
-width="600" 
-height="450" 
-style="border:0;" 
-class="w-full rounded-2xl"
-allowfullscreen="" 
-loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-
-  <style>
-    * {
-    /* border: 1px solid red; */
-    }
-  </style>
 </Layout>
+
+<section class="max-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.201247067094!2d-122.25503592403575!3d47.44701639898454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905cdcb1919977%3A0x154def00769c3d7e!2sESCO%20Supplies!5e0!3m2!1sen!2sus!4v1709137976029!5m2!1sen!2sus"
+    width="600"
+    height="450"
+    style="border:0;"
+    class="w-full rounded-2xl"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<style>
+  * {
+    /* border: 1px solid red; */
+  }
+</style>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>

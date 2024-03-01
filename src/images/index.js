@@ -40,3 +40,4 @@ export { default as troffer } from "./troffer.png";
 export { default as ufo } from "./ufo.png";
 export { default as vaporLight } from "./vaporLight.png";
 export { default as contact } from "./contact.jpeg";
+export { default as contactBanner } from "./contact-banner.jpeg";
