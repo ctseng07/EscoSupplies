@@ -12,7 +12,8 @@
     {
       "imagePath": "/src/images/Lnp.png",
       "altText": "lights n plastics",
-      "extraClasses": "p-2 h-full bg-white"
+      "alt": "/EscoSupplies/indoor-lighting",
+      "extraClasses": "p-2 h-full bg-white hover:scale-110 cursor-pointer"
     },
     {
       "imagePath": "/src/images/company4.png",
