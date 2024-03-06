@@ -14,15 +14,19 @@ if (!images[imagePath])
 
 <li>
   <div
-    class="flex items-center justify-start gap-8 h-full p-4 bg-white card"
+    class="flex items-center justify-start gap-8 h-full p-4 bg-white card max-sm:gap-4 max-sm:flex-col max-sm:p-2"
   >
-    <Image src={images[imagePath]()} alt={altText} class="w-2/5" />
+    <Image src={images[imagePath]()} alt={altText} class="w-2/5 max-sm:w-full" />
 
-    <p class="capitalize">{name}</p>
+    <p class="capitalize max-sm:text-center">{name}</p>
   </div>
 </li>
 
 <style>
+    * {
+  /* border: 1px solid red; */
+  }
+
   img {
     height: 100%;
     object-fit: contain;
