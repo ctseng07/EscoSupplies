@@ -23,27 +23,27 @@ const metaData = {
           commercial lighting products.
         </p>
 
-        <div class="rounded-2xl overflow-hidden">
+        <!-- <div class="rounded-2xl overflow-hidden">
           <Image src={contactBanner} alt="contactImg" 
-          class="w-full"/>
-        </div>
+          class="w-full" />
+        </div> -->
       </div>
     </div>
 
-    <div class="flex gap-8 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4">
-      <!-- <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
+    <div class="flex-row-reverse flex gap-6 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4">
+      <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
         <Image
-          src={contact}
+          src={contactBanner}
           alt="contactImg"
           class="w-full object-cover h-full"
         />
-      </div> -->
+      </div>
 
       <div class="form-wrapper flex-1">
         <div class="mb-8">
-          <div class="caption mb-2">Contact</div>
+          <div class="caption mb-2 max-sm:text-center">Contact</div>
 
-          <p class="mb-8">
+          <p class="mb-8 max-sm:text-center">
             Fill in the information below and we will reach out as soon as we
             receive your contact information.
           </p>
@@ -135,7 +135,7 @@ const metaData = {
       <span class="material-symbols-outlined text-3xl text-center w-full">
         location_city
       </span>
-      <h4 class="">Seattle Headquarters</h4>
+      <h4 class="text-center">Seattle Headquarters</h4>
       <p class="mt-2 text-center">
         <a
           href="https://www.google.com/maps/place/1045+Andover+Park+E+%23200,+Tukwila,+WA+98188/"
@@ -162,7 +162,7 @@ const metaData = {
           call
         </span>
         <h4 class="text-center">Toll-Free</h4>
-        <p class="mt-2">(888) 989-ESCO</p>
+        <p class="mt-2 text-center">(888) 989-ESCO</p>
       </div>
     </div>
     <div class="max-sm:w-full flex gap-5 max-sm:flex-col">
@@ -181,7 +181,7 @@ const metaData = {
       <span class="material-symbols-outlined text-3xl text-center w-full">
         mail
       </span>
-      <p class="mt-2">
+      <p class="mt-2 text-center">
         <a href="mailto:info@escosupplies.com">info@escosupplies.com</a>
       </p>
     </div>
@@ -194,7 +194,7 @@ const metaData = {
     width="600"
     height="450"
     style="border:0;"
-    class="w-full rounded-2xl"
+    class="w-full rounded-2xl max-sm:px-4"
     allowfullscreen=""
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
