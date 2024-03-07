@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from '../components/Footer.astro';
 import "flowbite";
 const { title, metaDescription } = Astro.props;
 import "@fontsource/lato";
@@ -28,6 +29,7 @@ import "@fontsource-variable/montserrat";
     <main class="mt-36 max-sm:mt-12">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 <style is:global>
@@ -40,6 +42,7 @@ import "@fontsource-variable/montserrat";
     --light-gray: #eeeeee;
     --red: #db1f00;
     --white: #ffffff;
+    --light-dark: #666666;
     --dark: #444444;
     --black: #000000;
     --light-blue: #7a889f;
@@ -93,7 +96,7 @@ import "@fontsource-variable/montserrat";
   }
   h5 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
   }
 
