@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import { contact, contactBanner } from "../images";
+import Subscribe from '../components/Subscribe.astro';
 
 const metaData = {
   title: "Contact Us | Esco Supplies",
@@ -194,12 +195,15 @@ const metaData = {
     width="600"
     height="450"
     style="border:0;"
-    class="w-full rounded-2xl max-sm:px-4 mb-6"
+    class="w-full rounded-2xl max-sm:px-4"
     allowfullscreen=""
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
+<Subscribe />
 </Layout>
+
+
 <style>
   * {
     /* border: 1px solid red; */
