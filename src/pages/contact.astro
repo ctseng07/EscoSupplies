@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import { contact, contactBanner } from "../images";
-import Subscribe from '../components/Subscribe.astro';
+import Subscribe from "../components/Subscribe.astro";
 
 const metaData = {
   title: "Contact Us | Esco Supplies",
@@ -16,9 +16,8 @@ const metaData = {
   <section class="max-container">
     <div class="flex justify-center items-center">
       <div class="text-center w-full px-4">
-        
         <h2 class="max-sm:text-4xl text-[--red]">Esco Supplies</h2>
-        
+
         <p class="my-4">
           is a nationwide distributor of both LED and fluorescent-based
           commercial lighting products.
@@ -31,7 +30,9 @@ const metaData = {
       </div>
     </div>
 
-    <div class="flex-row-reverse flex gap-6 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4">
+    <div
+      class="flex-row-reverse flex gap-6 lg:gap-16 max-lg:flex-col mt-8 lg:mt-16 px-4"
+    >
       <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
         <Image
           src={contactBanner}
@@ -102,11 +103,11 @@ const metaData = {
               required
             />
             <input
-            type="text"
-            name="text"
-            placeholder="Company Name"
-            class="border py-3 pl-4 rounded-lg w-full mb-4"
-          />
+              type="text"
+              name="text"
+              placeholder="Company Name"
+              class="border py-3 pl-4 rounded-lg w-full mb-4"
+            />
             <textarea
               name="message"
               placeholder="When's the best time to reach out?"
@@ -188,21 +189,21 @@ const metaData = {
     </div>
   </div>
 
-  
-<section class="max-container">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.201247067094!2d-122.25503592403575!3d47.44701639898454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905cdcb1919977%3A0x154def00769c3d7e!2sESCO%20Supplies!5e0!3m2!1sen!2sus!4v1709137976029!5m2!1sen!2sus"
-    width="600"
-    height="450"
-    style="border:0;"
-    class="w-full rounded-2xl max-sm:px-4"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-<Subscribe />
+  <section class="max-container">
+    <div class="rounded-2xl overflow-hidden max-sm:px-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.201247067094!2d-122.25503592403575!3d47.44701639898454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905cdcb1919977%3A0x154def00769c3d7e!2sESCO%20Supplies!5e0!3m2!1sen!2sus!4v1709137976029!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border:0;"
+        class="w-full"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <Subscribe />
 </Layout>
-
 
 <style>
   * {
