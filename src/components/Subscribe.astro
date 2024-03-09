@@ -2,44 +2,58 @@
 import Button from "./Button.astro";
 ---
 
-<section class="my-6">
-<div class="max-container bg-[--light-gray] flex justify-center mb-8">
-    <div class="flex justify-center flex-col w-1/2 p-8 gap-8 max-sm:w-3/4">
-        <h3 class="capitalize text-center">stay informed</h3>
-        <p class="text-center px-4">
-            Sign up and staylit with our latest news and promotional offers.
-        </p>
-        <div class="">
-            <form
-                id="contactForm"
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                class="flex max-sm:flex-col gap-2"
-            >
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your email address"
-                    class="py-3 pl-4 w-full"
-                />
-                <Button 
-                class="w-1/2 max-sm:w-full flex justify-center"
-                id="scheduleBtn"
-                type="submit">
-                    Subscribe
-                </Button>
-            </form>
+<section class="my-6 max-xl:px-2">
+    <div
+        class="max-container bg-[--light-gray] flex justify-center mb-8 rounded-2xl"
+    >
+        <div
+            class="flex justify-center flex-col w-1/2 p-8 gap-8 max-sm:w-3/4 max-sm:py-6 max-sm:px-4"
+        >
+            <h3 class="capitalize text-center">stay informed</h3>
+            <p class="text-center px-4">
+                Sign up and staylit with our latest news and promotional offers.
+            </p>
+            <div class="">
+                <form
+                    id="contactForm"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="flex max-sm:flex-col max-sm:gap-2"
+                >
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email address"
+                        class="py-3 pl-4 w-full"
+                    />
+                    <Button
+                        class="w-1/2 max-sm:w-full flex justify-center"
+                        id="scheduleBtn"
+                        type="submit"
+                    >
+                        Subscribe
+                    </Button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 </section>
 
 <style>
     * {
         /* border: 1px solid red; */
     }
+    button {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 
     input {
-        border: 1px solid red;
+        border: none;
+    }
+
+    @media screen and (max-width: 425px) {
+        button {
+            padding: 0.5rem;
+        }
     }
 </style>
