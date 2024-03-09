@@ -1,32 +1,84 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CompanyCard from "../components/CompanyCard.astro";
-import companies from "../data/companies.json";
-import Subscribe from '../components/Subscribe.astro';
+import { Image } from "astro:assets";
+import { heroHome } from "../images";
+import Subscribe from "../components/Subscribe.astro";
 ---
 
 <Layout title="Esco Supplies">
-    <h2 class="text-center mb-8 uppercase underline underline-offset-8 decoration-[--red] max-sm:text-2xl max-lg:px-2">Companies we are distributors for:</h2>
     <section class="px-2 mb-6">
-   <div class="max-container p-8 rounded-2xl max-sm:px-2 bg-[--light-gray]">
-        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
-            {
-                companies.map((card) => (
-                    <CompanyCard
-                        imagePath={card.imagePath}
-                        altText={card.altText}
-                    extraClasses={card.extraClasses}
-                    />
-                ))
-            }
-        </ul>
+        <div
+            class="max-container p-8 rounded-2xl max-sm:px-4 bg-[--light-gray] flex"
+        >
+            <Image src={heroHome} alt="hero-home-img" 
+            class='rounded-2xl' />
+        </div>
+
+        <div class="bg-[--light-gray] my-6 p-8 max-sm:px-4 max-sm:rounded-2xl">
+            <section
+                class="md:grid-cols-3 grid justify-between gap-8 max-container"
+            >
+                <div
+                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+                >
+                    <span
+                        class="material-symbols-outlined text-3xl text-[--red]"
+                    >
+                        group
+                    </span>
+                    <h4 class="">Customer-Centric</h4>
+                    <p class="body">
+                        Our focus is the customer. Our Trained, high-quality
+                        customer service team is here to help answer questions,
+                        provide recommendations, and deliver products fast.
+                    </p>
+                </div>
+                <div
+                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+                >
+                    <span
+                        class="material-symbols-outlined text-3xl text-[--red]"
+                    >
+                        electric_bolt
+                    </span>
+                    <h4 class="">Quick Delivery</h4>
+                    <p class="body">
+                        We express a sense of urgency to deliver your order to
+                        you quickly. Orders that are placed, complete and in
+                        stock typically ship within 24 hours Monday-Friday.
+                    </p>
+                </div>
+                <div
+                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+                >
+                    <span
+                        class="material-symbols-outlined text-3xl text-[--red]"
+                    >
+                        store
+                    </span>
+                    <h4 class="">Bulk Pricing</h4>
+                    <p class="body">
+                        The more you need, the more you save! With our volume
+                        pricing program, we make sure our competitive pricing
+                        puts you at a budgetary advantage.
+                    </p>
+                </div>
+            </section>
         </div>
     </section>
     <Subscribe />
 </Layout>
 
 <style>
-  * {
-  /* border: 1px solid red; */
-  }
+    * {
+        /* border: 1px solid red; */
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            "FILL" 0,
+            "wght" 400,
+            "GRAD" 0,
+            "opsz" 24;
+    }
 </style>
