@@ -42,3 +42,10 @@ export { default as vaporLight } from "./vaporLight.png";
 export { default as contact } from "./contact.jpeg";
 export { default as contactBanner } from "./contact-banner.jpeg";
 export { default as heroHome } from "./heroHome.jpg";
+export { default as dimmer } from "./dimmer.png";
+export { default as motion } from "./motion.png";
+export { default as occupancy } from "./occupancy.png";
+export { default as photo } from "./photo.png";
+export { default as timer } from "./timer.png";
+
+
