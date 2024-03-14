@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { about, EsLogo } from "../images";
+import Subscribe from "../components/Subscribe.astro";
+---
+
+<Layout title="Esco Supplies">
+    <section class="overflow-hidden rounded-2xl max-xl:mx-4">
+        <div class="">
+            <div class="relative overflow-hidden bg-[#050506] min-h-[50vh]">
+                <Image
+                    src={about}
+                    alt="Seattle backgroud"
+                    class="w-full absolute border-none"
+                />
+            </div>
+            <div
+                class="flex justify-center text-white bg-[#050506] px-4 py-12 h-full"
+            >
+                <div class="max-container w-full flex justify-between">
+                    <div class="md:w-1/2">
+                        <a href="/EscoSupplies">
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+                        </a>
+                        <a href="/EscoSupplies/brands"> Brands</a>
+                        <a href="/EscoSupplies/indoor-lighting">
+                            Indoor Lighting</a
+                        >
+                        <a href="/EscoSupplies/outdoor-lighting">
+                            Outdoor Controls</a
+                        >
+                        <a href="/EscoSupplies/lighting-controls">
+                            Lighting Controls</a
+                        >
+                    </div>
+                    <h2>About Esco Supplies</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Subscribe />
+</Layout>
+
+<style>
+    * {
+        /* border: 1px solid red; */
+    }
+</style>

@@ -47,5 +47,6 @@ export { default as motion } from "./motion.png";
 export { default as occupancy } from "./occupancy.png";
 export { default as photo } from "./photo.png";
 export { default as timer } from "./timer.png";
+export { default as about } from "./about.jpg";
 
 
