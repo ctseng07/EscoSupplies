@@ -2,47 +2,27 @@
     {
       "name": "Dimmers",
       "imagePath": "/src/images/dimmer.png",
-      "altText": "downlight"
+      "altText": "dimmer switch"
     },
     {
       "name": "Motion Sensors",
       "imagePath": "/src/images/motion.png",
-      "altText": "flat panel light"
+      "altText": "motion sensors"
     },
     {
       "name": "Occupancy Sensors",
       "imagePath": "/src/images/occupancy.png",
-      "altText": "high bay"
+      "altText": "occupancy sensor"
     },
     {
       "name": "Photo Sensors",
       "imagePath": "/src/images/photo.png",
-      "altText": "linear light"
+      "altText": "photo sensor"
     },
     {
       "name": "Timers",
       "imagePath": "/src/images/timer.png",
-      "altText": "Troffer light"
-    },
-    {
-      "name": "Vapor tight lights",
-      "imagePath": "/src/images/vaporLight.png",
-      "altText": "sports light"
-    },
-    {
-      "name": "Bulbs",
-      "imagePath": "/src/images/bulb.jpg",
-      "altText": "lightbulb"
-    },
-    {
-      "name": "Tubes",
-      "imagePath": "/src/images/tubes.jpeg",
-      "altText": "tubes"
-    },
-    {
-      "name": "Exit Signs",
-      "imagePath": "/src/images/exitSign.jpg",
-      "altText": "exit signs"
+      "altText": "timer control"
     }
   ]
   
