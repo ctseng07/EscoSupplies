@@ -6,39 +6,101 @@ import Subscribe from "../components/Subscribe.astro";
 ---
 
 <Layout title="Esco Supplies">
-    <section class="overflow-hidden rounded-2xl max-xl:mx-4">
-        <div class="">
-            <div class="relative overflow-hidden bg-[#050506] min-h-[50vh]">
-                <Image
-                    src={about}
-                    alt="Seattle backgroud"
-                    class="w-full absolute border-none"
-                />
-            </div>
-            <div
-                class="flex justify-center text-white bg-[#050506] px-4 py-12 h-full"
-            >
-                <div class="max-container w-full flex justify-between">
-                    <div class="md:w-1/2">
-                        <a href="/EscoSupplies">
-                            <span class="material-symbols-outlined">
-                                home
-                            </span>
-                        </a>
-                        <a href="/EscoSupplies/brands"> Brands</a>
-                        <a href="/EscoSupplies/indoor-lighting">
-                            Indoor Lighting</a
+    <section class="overflow-hidden rounded-2xl max-xl:mx-2">
+        <div class="relative overflow-hidden bg-[--dark] min-h-[50vh]">
+            <Image
+                src={about}
+                alt="Seattle backgroud"
+                class="w-full absolute border-none"
+            />
+        </div>
+        <div class="flex justify-center text-white bg-[--dark] px-4 py-6">
+            <div class="max-container w-full flex justify-between">
+                <div
+                    class="md:w-2/3 flex items-center gap-3 max-lg:hidden max-xl:w-full"
+                >
+                    <a href="/EscoSupplies">
+                        <span
+                            class="material-symbols-outlined pt-2 hover:text-[--gray]"
                         >
-                        <a href="/EscoSupplies/outdoor-lighting">
-                            Outdoor Controls</a
-                        >
-                        <a href="/EscoSupplies/lighting-controls">
-                            Lighting Controls</a
-                        >
-                    </div>
-                    <h2>About Esco Supplies</h2>
+                            home
+                        </span>
+                    </a>
+                    <p>/</p>
+                    <a class="hover:text-[--gray]" href="/EscoSupplies/brands">
+                        Brands</a
+                    >
+                    <p>/</p>
+                    <a
+                        class="hover:text-[--gray]"
+                        href="/EscoSupplies/indoor-lighting"
+                    >
+                        Indoor Lighting</a
+                    >
+                    <p>/</p>
+                    <a
+                        class="hover:text-[--gray]"
+                        href="/EscoSupplies/outdoor-lighting"
+                    >
+                        Outdoor Controls</a
+                    >
+                    <p>/</p>
+                    <a
+                        class="hover:text-[--gray]"
+                        href="/EscoSupplies/lighting-controls"
+                    >
+                        Lighting Controls</a
+                    >
                 </div>
+                <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
             </div>
+        </div>
+
+        <div class="my-8 max-container">
+            <div class="rounded-2xl md:w-full p-8 my-8 bg-[--dark]">
+                <div class="px-8 py-12">
+                <h2 class="mb-8 text-white">Your energy effeciency partner</h2>
+                <p class="body mb-4 text-white">
+                  As a licensed general contractor in WA, OR & ID, Conserve Energy was
+                  established with the vision of being the go-to Northwest company
+                  that could provide “the complete package” for energy efficiency.
+                  Since our start in 2008, we have developed an extensive network of
+                  suppliers and partners that help us deliver top-drawer products at
+                  reasonable prices.
+                </p>
+                <p class="body mb-4 text-white">
+                  Working with our partner companies, Conserve Energy has completed
+                  over 10,000 lighting and energy efficiency projects in the
+                  commercial and industrial sectors all across the states of
+                  Washington, Oregon and Western Idaho.
+                </p>
+                <p class="body mb-4 text-white">
+                  We stay focused on meeting customer needs. In-house expertise, along
+                  with a strong network of suppliers, subcontractors, and financing
+                  partners allows us to specify and deliver leading-edge products at
+                  competitive prices. This, coupled with an ability to identify and
+                  maximize third-party incentives, creates great value for every
+                  client.
+                </p>
+                <p class="body mb-4 text-white">
+                  In addition to our technical and product expertise, we work closely
+                  with local utilities and utility program management contractors to
+                  assure our customers receive maximum incentive dollars.
+                </p>
+                <p class="body mb-4 text-white">
+                  Our turnkey solutions start with audits to determine the energy
+                  saving potential, and extends into lighting and control design, top
+                  quality energy-efficient products, installation, project management,
+                  handling of all utility incentive paperwork, financing, and more.
+                </p>
+                <p class="body mb-4 text-white">
+                  There is no job too big or too small for us. Our customers range
+                  from small mom and pop shops to national corporations with projects
+                  from changing a few fixtures to complete retrofits for commercial
+                  facilities and high-rise buildings.
+                </p>
+              </div>
+              </div>    
         </div>
     </section>
     <Subscribe />
