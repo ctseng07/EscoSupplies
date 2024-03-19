@@ -49,4 +49,9 @@ export { default as photo } from "./photo.png";
 export { default as timer } from "./timer.png";
 export { default as about } from "./about.jpg";
 
+export { default as category1 } from './category1.png';
+export { default as category2 } from './category2.png';
+export { default as category3 } from './category3.png';
+export { default as category4 } from './category4.png';
+export { default as category5 } from './category5.png';
 

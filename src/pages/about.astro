@@ -1,7 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import { about, EsLogo } from "../images";
+import {
+    about,
+    category1,
+    category2,
+    category3,
+    category4,
+    category5,
+} from "../images";
 import Subscribe from "../components/Subscribe.astro";
 ---
 
@@ -10,7 +17,7 @@ import Subscribe from "../components/Subscribe.astro";
         <div class="relative overflow-hidden bg-[--dark] min-h-[50vh]">
             <Image
                 src={about}
-                alt="Seattle backgroud"
+                alt="about bg"
                 class="w-full absolute border-none"
             />
         </div>
@@ -57,52 +64,87 @@ import Subscribe from "../components/Subscribe.astro";
         </div>
 
         <div class="my-8 max-container">
-            <div class="rounded-2xl md:w-full p-8 my-8 bg-[--dark]">
-                <div class="px-8 py-12">
-                <h2 class="mb-8 text-white">Your energy effeciency partner</h2>
-                <p class="body mb-4 text-white">
-                  As a licensed general contractor in WA, OR & ID, Conserve Energy was
-                  established with the vision of being the go-to Northwest company
-                  that could provide “the complete package” for energy efficiency.
-                  Since our start in 2008, we have developed an extensive network of
-                  suppliers and partners that help us deliver top-drawer products at
-                  reasonable prices.
-                </p>
-                <p class="body mb-4 text-white">
-                  Working with our partner companies, Conserve Energy has completed
-                  over 10,000 lighting and energy efficiency projects in the
-                  commercial and industrial sectors all across the states of
-                  Washington, Oregon and Western Idaho.
-                </p>
-                <p class="body mb-4 text-white">
-                  We stay focused on meeting customer needs. In-house expertise, along
-                  with a strong network of suppliers, subcontractors, and financing
-                  partners allows us to specify and deliver leading-edge products at
-                  competitive prices. This, coupled with an ability to identify and
-                  maximize third-party incentives, creates great value for every
-                  client.
-                </p>
-                <p class="body mb-4 text-white">
-                  In addition to our technical and product expertise, we work closely
-                  with local utilities and utility program management contractors to
-                  assure our customers receive maximum incentive dollars.
-                </p>
-                <p class="body mb-4 text-white">
-                  Our turnkey solutions start with audits to determine the energy
-                  saving potential, and extends into lighting and control design, top
-                  quality energy-efficient products, installation, project management,
-                  handling of all utility incentive paperwork, financing, and more.
-                </p>
-                <p class="body mb-4 text-white">
-                  There is no job too big or too small for us. Our customers range
-                  from small mom and pop shops to national corporations with projects
-                  from changing a few fixtures to complete retrofits for commercial
-                  facilities and high-rise buildings.
-                </p>
-              </div>
-              </div>    
+            <div class="rounded-2xl md:w-full p-8 max-sm:p-2 my-8 bg-[--dark]">
+                <div class="px-8 py-12 max-sm:px-2">
+                    <h2 class="mb-8 text-white">
+                        Your energy effeciency partner
+                    </h2>
+                    <p class="body mb-4 text-white">
+                        As a licensed general contractor in WA, OR & ID,
+                        Conserve Energy was established with the vision of being
+                        the go-to Northwest company that could provide “the
+                        complete package” for energy efficiency. Since our start
+                        in 2008, we have developed an extensive network of
+                        suppliers and partners that help us deliver top-drawer
+                        products at reasonable prices.
+                    </p>
+                    <p class="body mb-4 text-white">
+                        Working with our partner companies, Conserve Energy has
+                        completed over 10,000 lighting and energy efficiency
+                        projects in the commercial and industrial sectors all
+                        across the states of Washington, Oregon and Western
+                        Idaho.
+                    </p>
+                    <p class="body mb-4 text-white">
+                        We stay focused on meeting customer needs. In-house
+                        expertise, along with a strong network of suppliers,
+                        subcontractors, and financing partners allows us to
+                        specify and deliver leading-edge products at competitive
+                        prices. This, coupled with an ability to identify and
+                        maximize third-party incentives, creates great value for
+                        every client.
+                    </p>
+                    <p class="body mb-4 text-white">
+                        In addition to our technical and product expertise, we
+                        work closely with local utilities and utility program
+                        management contractors to assure our customers receive
+                        maximum incentive dollars.
+                    </p>
+                    <p class="body mb-4 text-white">
+                        Our turnkey solutions start with audits to determine the
+                        energy saving potential, and extends into lighting and
+                        control design, top quality energy-efficient products,
+                        installation, project management, handling of all
+                        utility incentive paperwork, financing, and more.
+                    </p>
+                    <p class="body mb-4 text-white">
+                        There is no job too big or too small for us. Our
+                        customers range from small mom and pop shops to national
+                        corporations with projects from changing a few fixtures
+                        to complete retrofits for commercial facilities and
+                        high-rise buildings.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="max-container bg-[--light-gray] p-12 rounded-2xl">
+        <h3 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]">Search by category</h3>
+        <div class="flex max-container justify-between">
+            <div class="shadow-2xl hover:scale-110 cursor-pointer">
+            <Image src={category1} alt="about bg" width={200} />
+            <p class="uppercase text-center bg-[--dark] text-white p-2">light bulbs</p>
+        </div>
+        <div class="shadow-2xl">
+            <Image src={category2} alt="about bg" width={200} />
+            <p class="uppercase text-center bg-[--dark] text-white p-2">commercial lighting</p>
+        </div>
+        <div class="shadow-2xl">
+            <Image src={category3} alt="about bg" width={200} />
+            <p class="uppercase text-center bg-[--dark] text-white p-2">residential</p>
+        </div>
+        <div class="shadow-2xl">
+            <Image src={category4} alt="about bg" width={200} />
+            <p class="uppercase text-center bg-[--dark] text-white p-2">electrical supplies</p>
+        </div>
+        <div class="shadow-2xl">
+            <Image src={category5} alt="about bg" width={200} />
+            <p class="uppercase text-center bg-[--dark] text-white p-2">specialty</p>
+        </div>
+        </div>
+    </section>
+
     <Subscribe />
 </Layout>
 
