@@ -55,3 +55,19 @@ export { default as category3 } from './category3.png';
 export { default as category4 } from './category4.png';
 export { default as category5 } from './category5.png';
 
+export { default as indoor1 } from './indoor1.png';
+export { default as indoor2 } from './indoor2.png';
+export { default as indoor3 } from './indoor3.png';
+export { default as indoor4 } from './indoor4.png';
+export { default as indoor5 } from './indoor5.png';
+export { default as indoor6 } from './indoor6.png';
+
+export { default as industry1 } from './industry1.png';
+export { default as industry2 } from './industry2.png';
+export { default as industry3 } from './industry3.png';
+export { default as industry4 } from './industry4.png';
+export { default as industry5 } from './industry5.png';
+export { default as industry6 } from './industry6.png';
+
+
+

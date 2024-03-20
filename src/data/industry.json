@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Indoor Commercial Property Lighting",
+      "imagePath": "/src/images/indoor1.png",
+      "altText": "indoor-commercial"
+    },
+    {
+      "name": "church lighting",
+      "imagePath": "/src/images/indoor2.png",
+      "altText": "church"
+    },
+    {
+      "name": "office lighting",
+      "imagePath": "/src/images/indoor3.png",
+      "altText": "office"
+    },
+    {
+      "name": "School lighting",
+      "imagePath": "/src/images/indoor4.png",
+      "altText": "school"
+    },
+    {
+      "name": "warehouse lighting",
+      "imagePath": "/src/images/indoor5.png",
+      "altText": "warehouse"
+    },
+    {
+      "name": "Hotels & Hospitality Lighting",
+      "imagePath": "/src/images/indoor6.png",
+      "altText": "hotels"
+    },
+    {
+      "name": "outdoor commercial property lighting",
+      "imagePath": "/src/images/industry1.png",
+      "altText": "outdoor-commercial"
+    },
+    {
+      "name": "Hospital & Healthcare Lighting",
+      "imagePath": "/src/images/industry2.png",
+      "altText": "hospital-outdoor"
+    },
+    {
+      "name": "government lighting",
+      "imagePath": "/src/images/industry3.png",
+      "altText": "government"
+    },
+    {
+      "name": "parking lot lights",
+      "imagePath": "/src/images/industry4.png",
+      "altText": "parking-lot"
+    },
+    {
+      "name": "Stadium and Sports Lights",
+      "imagePath": "/src/images/industry5.png",
+      "altText": "stadiums"
+    },
+    {
+      "name": "Parking Garage Lighting",
+      "imagePath": "/src/images/industry6.png",
+      "altText": "Garage"
+    }
+  ]
+  

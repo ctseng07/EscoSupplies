@@ -1,0 +1,27 @@
+[
+    {
+      "name": "light bulbs",
+      "imagePath": "/src/images/category1.png",
+      "altText": "Light Bulbs"
+    },
+    {
+      "name": "commercial lighting",
+      "imagePath": "/src/images/category2.png",
+      "altText": "commercial lighting"
+    },
+    {
+      "name": "residential",
+      "imagePath": "/src/images/category3.png",
+      "altText": "residential"
+    },
+    {
+      "name": "electrical supplies",
+      "imagePath": "/src/images/category4.png",
+      "altText": "electrical supplies"
+    },
+    {
+      "name": "specialty",
+      "imagePath": "/src/images/category5.png",
+      "altText": "specialty"
+    }
+  ]

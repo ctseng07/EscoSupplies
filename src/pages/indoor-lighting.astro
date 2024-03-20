@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import indoorData from "../data/indoor.json";
 import CategoryCard from "../components/CategoryCard.astro";
 import Subscribe from '../components/Subscribe.astro';
+
+import industry from "../data/industry.json";
+import InfoCard from "../components/InfoCard.astro";
 ---
 
 <Layout title="Esco Supplies">
@@ -22,6 +25,23 @@ import Subscribe from '../components/Subscribe.astro';
     </ul>
   </div>
 </section>
+
+    <!-- Indoor Industry Section -->
+
+    <section class="max-container bg-[--light-gray] p-12 rounded-2xl">
+      <h3 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]">Search by category</h3>
+      <ul class="grid gap-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-4 ">
+        {
+          industry.map((card) => (
+            <InfoCard
+              name={card.name}
+              imagePath={card.imagePath}
+              altText={card.altText}
+            />
+          ))
+        }
+      </ul>
+    </section>
 <Subscribe />
 </Layout>
 
