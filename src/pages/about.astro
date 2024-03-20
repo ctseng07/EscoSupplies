@@ -10,6 +10,8 @@ import {
     category5,
 } from "../images";
 import Subscribe from "../components/Subscribe.astro";
+import category from "../data/category.json";
+import InfoCard from "../components/InfoCard.astro";
 ---
 
 <Layout title="Esco Supplies">
@@ -119,31 +121,22 @@ import Subscribe from "../components/Subscribe.astro";
         </div>
     </section>
 
+    <!-- Search By Category Section -->
+
     <section class="max-container bg-[--light-gray] p-12 rounded-2xl">
         <h3 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]">Search by category</h3>
-        <div class="flex max-container justify-between">
-            <div class="shadow-2xl hover:scale-110 cursor-pointer">
-            <Image src={category1} alt="about bg" width={200} />
-            <p class="uppercase text-center bg-[--dark] text-white p-2">light bulbs</p>
-        </div>
-        <div class="shadow-2xl">
-            <Image src={category2} alt="about bg" width={200} />
-            <p class="uppercase text-center bg-[--dark] text-white p-2">commercial lighting</p>
-        </div>
-        <div class="shadow-2xl">
-            <Image src={category3} alt="about bg" width={200} />
-            <p class="uppercase text-center bg-[--dark] text-white p-2">residential</p>
-        </div>
-        <div class="shadow-2xl">
-            <Image src={category4} alt="about bg" width={200} />
-            <p class="uppercase text-center bg-[--dark] text-white p-2">electrical supplies</p>
-        </div>
-        <div class="shadow-2xl">
-            <Image src={category5} alt="about bg" width={200} />
-            <p class="uppercase text-center bg-[--dark] text-white p-2">specialty</p>
-        </div>
-        </div>
-    </section>
+        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+          {
+            category.map((card) => (
+              <InfoCard
+                name={card.name}
+                imagePath={card.imagePath}
+                altText={card.altText}
+              />
+            ))
+          }
+        </ul>
+      </section>
 
     <Subscribe />
 </Layout>

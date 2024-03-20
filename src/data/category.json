@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Retail",
+      "imagePath": "/src/images/category1.png",
+      "altText": "retail store"
+    },
+    {
+      "name": "Office",
+      "imagePath": "/src/images/category2.png",
+      "altText": "office space"
+    },
+    {
+      "name": "Hospitality",
+      "imagePath": "/src/images/category3.png",
+      "altText": "hotel room"
+    },
+    {
+      "name": "Industrial",
+      "imagePath": "/src/images/category4.png",
+      "altText": "industrial building"
+    },
+    {
+      "name": "warehouse",
+      "imagePath": "/src/images/category5.png",
+      "altText": "warehouse"
+    }
+  ]
