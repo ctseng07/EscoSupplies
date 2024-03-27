@@ -11,6 +11,7 @@ import {
 } from "../images";
 import Subscribe from "../components/Subscribe.astro";
 import category from "../data/category.json";
+import industry from "../data/industry.json";
 import InfoCard from "../components/InfoCard.astro";
 ---
 
@@ -123,20 +124,49 @@ import InfoCard from "../components/InfoCard.astro";
 
     <!-- Search By Category Section -->
 
-    <section class="max-container bg-[--light-gray] p-12 rounded-2xl">
-        <h3 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]">Search by category</h3>
-        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
-          {
-            category.map((card) => (
-              <InfoCard
-                name={card.name}
-                imagePath={card.imagePath}
-                altText={card.altText}
-              />
-            ))
-          }
+    <section class="px-2">
+        <div class="max-container bg-[--light-gray] p-12 rounded-2xl">
+            <h3
+                class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
+            >
+                Search by category
+            </h3>
+            <ul
+                class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:grid-cols-1"
+            >
+                {
+                    category.map((card) => (
+                        <InfoCard
+                            name={card.name}
+                            imagePath={card.imagePath}
+                            altText={card.altText}
+                            extraClasses={card.extraClasses}
+                        />
+                    ))
+                }
+            </ul>
+        </div>
+    </section>
+    <section class="max-container p-12 rounded-2xl max-sm:px-2">
+        <h3
+            class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
+        >
+            Markets we serve
+        </h3>
+        <ul
+            class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 max-sm:grid-cols-1"
+        >
+            {
+                industry.map((card) => (
+                    <InfoCard
+                        name={card.name}
+                        imagePath={card.imagePath}
+                        altText={card.altText}
+                    />
+                ))
+            }
         </ul>
-      </section>
+    </section>
 
     <Subscribe />
 </Layout>

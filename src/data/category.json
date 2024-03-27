@@ -2,7 +2,8 @@
     {
       "name": "light bulbs",
       "imagePath": "/src/images/category1.png",
-      "altText": "Light Bulbs"
+      "altText": "Light Bulbs",
+      "extraClasses": "max-md:h-1/4 text-[--red]"
     },
     {
       "name": "commercial lighting",
