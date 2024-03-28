@@ -13,13 +13,13 @@ if (!images[imagePath])
 ---
 
 <li>
-    <div class="aspect-square hover:scale-110 cursor-pointer">
+    <div class=`aspect-square hover:scale-110 cursor-pointer ${extraClasses}`>
         <Image
             src={images[imagePath]()}
             alt={altText}
             class="object-cover w-full"
         />
-        <p class=`text-center uppercase text-white p-2 bg-[--dark] flex justify-center items-center h-1/4 max-lg:h-1/2 max-md:h-auto ${extraClasses}`>{name}</p>
+        <p class=`text-center uppercase text-white p-2 bg-[--dark] flex justify-center items-center h-1/4 max-xl:h-1/2 max-md:h-auto ${extraClasses}`>{name}</p>
     </div>
 </li>
 
