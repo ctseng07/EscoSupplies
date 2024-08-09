@@ -2,12 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import {
-    about,
-    category1,
-    category2,
-    category3,
-    category4,
-    category5,
+  about,
+  category1,
+  category2,
+  category3,
+  category4,
+  category5,
 } from "../images";
 import Subscribe from "../components/Subscribe.astro";
 import category from "../data/category.json";
@@ -16,57 +16,44 @@ import InfoCard from "../components/InfoCard.astro";
 ---
 
 <Layout title="Esco Supplies">
-    <section class="overflow-hidden rounded-2xl max-xl:mx-2">
-        <div class="relative overflow-hidden bg-[--dark] min-h-[30vh] md:min-h-[50vh]">
-            <Image
-                src={about}
-                alt="about bg"
-                class="w-full absolute border-none object-cover"
-            />
+  <section class="overflow-hidden rounded-2xl max-xl:mx-2">
+    <div
+      class="relative overflow-hidden bg-[--dark] min-h-[30vh] md:min-h-[50vh]"
+    >
+      <Image
+        src={about}
+        alt="about bg"
+        class="w-full absolute border-none object-cover"
+      />
+    </div>
+    <div class="flex justify-center text-white bg-[--dark] px-4 py-6">
+      <div class="max-container w-full flex justify-between">
+        <div
+          class="md:w-2/3 flex items-center gap-3 max-lg:hidden max-xl:w-full"
+        >
+          <a href="/EscoSupplies">
+            <span class="material-symbols-outlined pt-2 hover:text-[--gray]">
+              home
+            </span>
+          </a>
+          <p>/</p>
+          <a class="hover:text-[--gray]" href="/EscoSupplies/brands"> Brands</a>
+          <p>/</p>
+          <a class="hover:text-[--gray]" href="/EscoSupplies/lighting">
+            Lighting</a
+          >
+          <p>/</p>
+          <a class="hover:text-[--gray]" href="/EscoSupplies/ev-chargers">
+            EV Chargers</a
+          >
+          <p>/</p>
+          <a class="hover:text-[--gray]" href="/EscoSupplies/ptacs"> PTACs</a>
         </div>
-        <div class="flex justify-center text-white bg-[--dark] px-4 py-6">
-            <div class="max-container w-full flex justify-between">
-                <div
-                    class="md:w-2/3 flex items-center gap-3 max-lg:hidden max-xl:w-full"
-                >
-                    <a href="/EscoSupplies">
-                        <span
-                            class="material-symbols-outlined pt-2 hover:text-[--gray]"
-                        >
-                            home
-                        </span>
-                    </a>
-                    <p>/</p>
-                    <a class="hover:text-[--gray]" href="/EscoSupplies/brands">
-                        Brands</a
-                    >
-                    <p>/</p>
-                    <a
-                        class="hover:text-[--gray]"
-                        href="/EscoSupplies/lighting"
-                    >
-                        Lighting</a
-                    >
-                    <p>/</p>
-                    <a
-                        class="hover:text-[--gray]"
-                        href="/EscoSupplies/ev-chargers"
-                    >
-                       EV Chargers</a
-                    >
-                    <p>/</p>
-                    <a
-                        class="hover:text-[--gray]"
-                        href="/EscoSupplies/ptacs"
-                    >
-                        PTACs</a
-                    >
-                </div>
-                <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
-            </div>
-        </div>
+        <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
+      </div>
+    </div>
 
-        <div class="my-8 max-container">
+    <!-- <div class="my-8 max-container">
             <div class="rounded-2xl md:w-full p-8 max-sm:p-2 my-8 bg-[--dark]">
                 <div class="px-8 py-12 max-sm:px-2">
                     <h2 class="mb-8 text-white">
@@ -119,12 +106,12 @@ import InfoCard from "../components/InfoCard.astro";
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> -->
+  </section>
 
-    <!-- Search By Category Section -->
+  <!-- Search By Category Section -->
 
-    <!-- <section class="px-2">
+  <!-- <section class="px-2">
         <div class="max-container bg-[--light-gray] p-12 rounded-2xl max-sm:px-4">
             <h3
                 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
@@ -148,33 +135,32 @@ import InfoCard from "../components/InfoCard.astro";
         </div>
     </section> -->
 
-    
-    <section class="max-container py-12 rounded-2xl max-sm:px-2">
-        <h3
-            class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
-        >
-            Markets we serve
-        </h3>
-        <ul
-            class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:grid-cols-1"
-        >
-            {
-                industry.map((card) => (
-                    <InfoCard
-                        name={card.name}
-                        imagePath={card.imagePath}
-                        altText={card.altText}
-                    />
-                ))
-            }
-        </ul>
-    </section>
+  <section class="max-container py-12 rounded-2xl max-sm:px-2">
+    <h3
+      class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
+    >
+      Markets we serve
+    </h3>
+    <ul
+      class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:grid-cols-1"
+    >
+      {
+        industry.map((card) => (
+          <InfoCard
+            name={card.name}
+            imagePath={card.imagePath}
+            altText={card.altText}
+          />
+        ))
+      }
+    </ul>
+  </section>
 
-    <Subscribe />
+  <Subscribe />
 </Layout>
 
 <style>
-    * {
-        /* border: 1px solid red; */
-    }
+  * {
+    /* border: 1px solid red; */
+  }
 </style>
