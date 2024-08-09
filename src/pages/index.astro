@@ -36,38 +36,44 @@ import Subscribe from "../components/Subscribe.astro";
     class="flex flex-col px-2 items-center gap-16 mb-6 py-6 max-sm:py-0 max-container"
   >
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div
-        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-      >
-        <Image src={lights} alt="ledLights" class="object-cover h-full" />
+      <a href="/lighting">
         <div
-          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          class="hover:scale-110 hover:text-[var(--red)] h-full cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
-          <h5 class="uppercase">lighting</h5>
+          <Image src={lights} alt="ledLights" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">lighting</h5>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div
-        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-      >
-        <Image src={ptac} alt="ptac" class="object-cover h-full" />
+      <a href="/ptacs">
         <div
-          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          class="hover:scale-110 hover:text-[var(--red)] h-full cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
-          <h5 class="uppercase">PTACs</h5>
+          <Image src={ptac} alt="ptac" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">PTACs</h5>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div
-        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl lg:h-[31rem] bg-slate-400 overflow-hidden relative"
-      >
-        <Image src={ev} alt="services" class="object-cover h-full" />
+      <a href="ev-chargers" class="lg:h-[31rem]">
         <div
-          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          class="hover:scale-110 hover:text-[var(--red)] h-full cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
-          <h5 class="uppercase">EV Chargers</h5>
+          <Image src={ev} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">EV Chargers</h5>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
