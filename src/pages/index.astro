@@ -1,159 +1,216 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import { heroHome } from "../images";
+import { heroHome, lights, ev, ptac } from "../images";
 import Subscribe from "../components/Subscribe.astro";
 ---
 
 <Layout title="Esco Supplies">
-    <section class="px-2 mb-6">
+
+      <!-- Hero -->
+
+  <section class="p-2 max-sm:my-6 relative text-center">
+    <Image
+      src={heroHome}
+      alt="hero-home-img"
+      class="max-sm:rounded-2xl w-full"
+    />
+
+    <div class="w-full absolute max-sm:top-0 left-0 max-sm:gap-4 top-52 text-center max-conatiner gap-12 flex-col flex p-8">
+      <h1
+        class="bg-white opacity-85 text-center max-sm:p-6 max-sm:m-6 rounded-2xl max-container p-4 max-sm:text-2xl"
+      >
+        title
+      </h1>
+      <p
+        class="bg-white opacity-85 max-sm:text-base text-center max-sm:p-6 max-sm:m-6 rounded-2xl max-container p-4"
+      >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab? Nam eum placeat animi odio reprehenderit, ea voluptates labore veritatis totam hic? Quis odio cum numquam, voluptatibus labore ducimus quod.
+      </p>
+    </div>
+  </section>
+
+  <section class=" flex flex-col px-4 items-center gap-16 my-6 p-8 max-container">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={lights} alt="ledLights" class="object-cover h-full" />
         <div
-            class="max-container p-8 rounded-2xl max-sm:px-4 bg-[--light-gray] flex"
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
         >
-            <Image src={heroHome} alt="hero-home-img" 
-            class='rounded-2xl' />
+          <h5 class="uppercase">lighting</h5>
         </div>
+      </div>
 
-        <div class="bg-[--light-gray] my-6 p-8 max-sm:px-4 max-sm:rounded-2xl">
-            <h1 class="capitalize text-center pb-4 max-sm:text-4xl">why choose us?</h1>
-            <section
-                class="md:grid-cols-3 grid justify-between gap-8 max-container"
-            >
-                <div
-                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
-                >
-                    <span
-                        class="material-symbols-outlined text-3xl text-[--red]"
-                    >
-                        group
-                    </span>
-                    <h4 class="">Customer-Centric</h4>
-                    <p class="body">
-                        Our focus is the customer. Our Trained, high-quality
-                        customer service team is here to help answer questions,
-                        provide recommendations, and deliver products fast.
-                    </p>
-                </div>
-                <div
-                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
-                >
-                    <span
-                        class="material-symbols-outlined text-3xl text-[--red]"
-                    >
-                        electric_bolt
-                    </span>
-                    <h4 class="">Quick Delivery</h4>
-                    <p class="body">
-                        We express a sense of urgency to deliver your order to
-                        you quickly. Orders that are placed, complete and in
-                        stock typically ship within 24 hours Monday-Friday.
-                    </p>
-                </div>
-                <div
-                    class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
-                >
-                    <span
-                        class="material-symbols-outlined text-3xl text-[--red]"
-                    >
-                        store
-                    </span>
-                    <h4 class="">Bulk Pricing</h4>
-                    <p class="body">
-                        The more you need, the more you save! With our volume
-                        pricing program, we make sure our competitive pricing
-                        puts you at a budgetary advantage.
-                    </p>
-                </div>
-            </section>
+      <div
+        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={ptac} alt="ptac" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">PTACs</h5>
         </div>
+      </div>
 
-        <section class="flex flex-col shadow-2xl rounded-lg bg-[--dark] py-8 max-container">
-            <div class="p-4 rounded-t-lg">
-              <h3 class="capitalize text-center mb-8 text-white">The energy retrofit ROI</h3>
-              <p class="body text-center mb-4 text-white">
-                Energy efficiency retrofits pay back your investment primarily by
-                reducing your energy costs
-              </p>
-            </div>
+      <div
+        class="hover:scale-110 hover:text-[var(--red)] cursor-pointer shadow-2xl rounded-xl lg:h-[31rem] bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={ev} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">EV Chargers</h5>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div
-              class="flex justify-between gap-4 flex-col lg:flex-row p-4 max-lg:grid max-md:grid-cols-1 max-lg:grid-cols-2"
-            >
-              <!-- Stack 1 -->
-              <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
-                <span
-                  class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
-                >
-                  factory</span
-                >
-      
-                <h4 class="caption uppercase py-5">what company utilities do</h4>
-                <p class="text-body-color">
-                  Reducing demand through improved energy efficiency is the most
-                  cost-effective way for utilities to assure they have sufficient
-                  capacity to meet the needs of all customers.
-                </p>
-              </div>
-              <!-- Stack 2 -->
-              <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
-                <span
-                  class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
-                >
-                  bolt</span
-                >
-      
-                <h4 class="caption uppercase py-5">quick payback period</h4>
-                <p class="text-body-color">
-                  Conserve Energy’s customers typically recover their investment
-                  within 2 years. After that, it’s all additional profit at the bottom
-                  line
-                </p>
-              </div>
-              <!-- Stack 3 -->
-              <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
-                <span
-                  class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
-                >
-                  currency_exchange</span
-                >
-      
-                <h4 class="caption uppercase py-5">additional roi</h4>
-                <p class="text-body-color">
-                  When retrofits include LED lighting, expect significant savings on
-                  maintenance, and potential improvements in sales, productivity and
-                  safety from enhanced lighting.
-                </p>
-              </div>
-              <!-- Stack 4 -->
-              <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
-                <span
-                  class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
-                >
-                  price_check</span
-                >
-                <h4 class="caption uppercase py-5">better business valuation</h4>
-                <p class="text-body-color">
-                  Since improved energy efficiency increases profitability by reducing
-                  operating costs, business valuations often rise, an important point
-                  for those considering a sale or refinance.
-                </p>
-              </div>
-            </div>
-          </section>
+      <!-- Why Choose Us? -->
+
+  <section class="px-2 mb-6">
+    <div class="bg-[--light-gray] my-6 p-8 max-sm:px-4 max-sm:rounded-2xl">
+      <h3 class="capitalize text-center mb-8 max-sm:text-4xl">
+        why choose us?
+      </h3>
+      <section class="md:grid-cols-3 grid justify-between gap-8 max-container">
+        <div
+          class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+        >
+          <span class="material-symbols-outlined text-3xl text-[--red]">
+            group
+          </span>
+          <h4 class="">Customer-Centric</h4>
+          <p class="body">
+            Our focus is the customer. Our Trained, high-quality customer
+            service team is here to help answer questions, provide
+            recommendations, and deliver products fast.
+          </p>
+        </div>
+        <div
+          class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+        >
+          <span class="material-symbols-outlined text-3xl text-[--red]">
+            electric_bolt
+          </span>
+          <h4 class="">Quick Delivery</h4>
+          <p class="body">
+            We express a sense of urgency to deliver your order to you quickly.
+            Orders that are placed, complete and in stock typically ship within
+            24 hours Monday-Friday.
+          </p>
+        </div>
+        <div
+          class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl bg-white"
+        >
+          <span class="material-symbols-outlined text-3xl text-[--red]">
+            store
+          </span>
+          <h4 class="">Bulk Pricing</h4>
+          <p class="body">
+            The more you need, the more you save! With our volume pricing
+            program, we make sure our competitive pricing puts you at a
+            budgetary advantage.
+          </p>
+        </div>
+      </div>
+      </section>
+
+        <!-- Retrofit ROI -->
+
+    <section
+      class="flex-col shadow-2xl rounded-lg bg-[--dark] py-8 max-container my-6"
+    >
+      <div class="p-4 rounded-t-lg">
+        <h3 class="capitalize text-center mb-8 text-white">
+          The energy retrofit ROI
+        </h3>
+        <p class="text-center mb-4 text-white">
+          Energy efficiency retrofits pay back your investment primarily by
+          reducing your energy costs
+        </p>
+      </div>
+
+      <div
+        class="flex justify-between gap-4 flex-col lg:flex-row p-4 max-lg:grid max-md:grid-cols-1 max-lg:grid-cols-2"
+      >
+        <!-- Stack 1 -->
+        <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
+          <span
+            class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
+          >
+            factory</span
+          >
+
+          <h4 class="caption uppercase py-5">what company utilities do</h4>
+          <p class="text-body-color">
+            Reducing demand through improved energy efficiency is the most
+            cost-effective way for utilities to assure they have sufficient
+            capacity to meet the needs of all customers.
+          </p>
+        </div>
+        <!-- Stack 2 -->
+        <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
+          <span
+            class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
+          >
+            bolt</span
+          >
+
+          <h4 class="caption uppercase py-5">quick payback period</h4>
+          <p class="text-body-color">
+            Conserve Energy’s customers typically recover their investment
+            within 2 years. After that, it’s all additional profit at the bottom
+            line
+          </p>
+        </div>
+        <!-- Stack 3 -->
+        <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
+          <span
+            class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
+          >
+            currency_exchange</span
+          >
+
+          <h4 class="caption uppercase py-5">additional roi</h4>
+          <p class="text-body-color">
+            When retrofits include LED lighting, expect significant savings on
+            maintenance, and potential improvements in sales, productivity and
+            safety from enhanced lighting.
+          </p>
+        </div>
+        <!-- Stack 4 -->
+        <div class="lg:w-1/2 max-md:w-full p-4 shadow-2xl rounded-lg bg-white">
+          <span
+            class="material-symbols-outlined text-4xl max-sm:text-xl bg-[--button] text-white rounded-full w-14 h-14 flex items-center justify-center"
+          >
+            price_check</span
+          >
+          <h4 class="caption uppercase py-5">better business valuation</h4>
+          <p class="text-body-color">
+            Since improved energy efficiency increases profitability by reducing
+            operating costs, business valuations often rise, an important point
+            for those considering a sale or refinance.
+          </p>
+        </div>
+      </div>
     </section>
-    <Subscribe />
+  </section>
+  <Subscribe />
 </Layout>
 
 <style>
-    * {
-        /* border: 1px solid red; */
-    }
+  * {
+    /* border: 1px solid red; */
+  }
 
-    .material-symbols-outlined {
-        font-variation-settings:
-            "FILL" 0,
-            "wght" 400,
-            "GRAD" 0,
-            "opsz" 24;
-    }
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 24;
+  }
 </style>

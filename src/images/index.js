@@ -48,6 +48,10 @@ export { default as occupancy } from "./occupancy.png";
 export { default as photo } from "./photo.png";
 export { default as timer } from "./timer.png";
 export { default as about } from "./about.jpg";
+export { default as lights } from "./lights.png";
+export { default as ev } from "./ev.png";
+export { default as ptac } from "./ptac.png";
+
 
 export { default as category1 } from './category1.png';
 export { default as category2 } from './category2.png';
