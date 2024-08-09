@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import indoorData from "../data/indoor.json";
+import outdoorData from '../data/ev.json';
+import controlData from "../data/ptacs.json";
+import CategoryCard from "../components/CategoryCard.astro";
+import Subscribe from "../components/Subscribe.astro";
+
+import industry from "../data/industry.json";
+import InfoCard from "../components/InfoCard.astro";
+---
+
+<Layout title="Esco Supplies">
+
+  <!-- Indoor Lighting -->
+
+  <h2 class="text-center my-8 text-[--red]">Indoor Lighting</h2>
+
+  <section class="px-2 my-8">
+    <div
+      class="max-container p-8 rounded-2xl bg-[--light-gray] max-sm:p-4 max-md:p-6"
+    >
+      <ul class="grid grid-cols-2 lg:grid-cols-3 gap-8 max-sm:gap-4">
+        {
+          indoorData.map((card) => (
+            <CategoryCard
+              imagePath={card.imagePath}
+              altText={card.altText}
+              name={card.name}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Outdoor Lighting -->
+
+  <h2 class="text-center my-8 text-[--red]">Outdoor Lighting</h2>
+  <section class="px-2 my-8">
+  <div class="max-container p-8 rounded-2xl bg-[--light-gray] max-sm:p-4 max-md:p-6">
+    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-8 max-sm:gap-4">
+      {
+        outdoorData.map((card) => (
+          <CategoryCard
+            imagePath={card.imagePath}
+            altText={card.altText}
+            name={card.name}
+          />
+        ))
+      }
+    </ul>
+  </div>
+
+
+  <!-- Lighting Controls -->
+  <h2 class="text-center my-8 text-[--red]">Lighting Controls</h2>
+  <section class="px-2 my-8">
+    <div class="max-container p-8 rounded-2xl bg-[--light-gray] max-sm:p-4 max-md:p-6">
+      <ul class="grid grid-cols-2 lg:grid-cols-3 gap-8 max-sm:gap-4">
+        {
+        controlData.map((card) => (
+          <CategoryCard
+            imagePath={card.imagePath}
+            altText={card.altText}
+            name={card.name}
+          />
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+  <!-- Indoor Industry Section -->
+
+  <!-- <section class="max-container bg-[--light-gray] p-12 rounded-2xl">
+      <h3 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]">Search by category</h3>
+      <ul class="grid gap-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-4 ">
+        {
+          industry.map((card) => (
+            <InfoCard
+              name={card.name}
+              imagePath={card.imagePath}
+              altText={card.altText}
+            />
+          ))
+        }
+      </ul>
+    </section> -->
+  <Subscribe />
+</Layout>
+
+<style>
+  * {
+    /* border: 1px solid red; */
+  }
+</style>
