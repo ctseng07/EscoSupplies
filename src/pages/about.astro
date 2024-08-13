@@ -16,6 +16,7 @@ import InfoCard from "../components/InfoCard.astro";
 ---
 
 <Layout title="Esco Supplies">
+<<<<<<< HEAD
   <section class="overflow-hidden rounded-2xl max-xl:mx-2">
     <div
       class="relative overflow-hidden bg-[--dark] min-h-[30vh] md:min-h-[50vh]"
@@ -48,14 +49,75 @@ import InfoCard from "../components/InfoCard.astro";
           >
           <p>/</p>
           <a class="hover:text-[--gray]" href="/EscoSupplies/ptacs"> PTACs</a>
+=======
+    <section class="overflow-hidden rounded-2xl max-xl:mx-2">
+        <div class="relative overflow-hidden bg-[--dark] min-h-[30vh] md:min-h-[50vh]">
+            <Image
+                src={about}
+                alt="about bg"
+                class="w-full absolute border-none object-cover"
+            />
+        </div>
+        <div class="flex justify-center text-white bg-[--dark] px-4 py-6">
+            <div class="max-container w-full flex justify-between">
+                <div
+                    class="md:w-2/3 flex items-center gap-3 max-lg:hidden max-xl:w-full"
+                >
+                    <a href="/EscoSupplies">
+                        <span
+                            class="material-symbols-outlined pt-2 hover:text-[--gray]"
+                        >
+                            home
+                        </span>
+                    </a>
+                    <p>/</p>
+                    <a 
+                    class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition" href="#aboutUs"
+                    aria-current="page">
+                    <span
+                    class="transition-all duration-500 ease-out capitalize"
+                    >about us</span
+                  ></a
+                    >
+                    <p>/</p>
+                    <a 
+                    class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition" href="#market"
+                    aria-current="page">
+                    <span
+                    class="transition-all duration-500 ease-out capitalize"
+                    >markets</span
+                  ></a
+                    >
+                    <p>/</p>
+                    <a
+                        class="hover:text-[--gray]"
+                        href="/EscoSupplies/ev-chargers"
+                    >
+                       EV Chargers</a
+                    >
+                    <p>/</p>
+                    <a
+                        class="hover:text-[--gray]"
+                        href="/EscoSupplies/ptacs"
+                    >
+                        PTACs</a
+                    >
+                </div>
+                <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
+            </div>
+>>>>>>> ba3e9cf (Update about us page links)
         </div>
         <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
       </div>
     </div>
 
+<<<<<<< HEAD
     <!-- <div class="my-8 max-container">
+=======
+        <div class="my-8 max-container" id="#aboutUs">
+>>>>>>> ba3e9cf (Update about us page links)
             <div class="rounded-2xl md:w-full p-8 max-sm:p-2 my-8 bg-[--dark]">
-                <div class="px-8 py-12 max-sm:px-2">
+                <div class="px-8 py-12 max-sm:px-2" id="aboutUs">
                     <h2 class="mb-8 text-white">
                         Your energy effeciency partner
                     </h2>
@@ -135,6 +197,7 @@ import InfoCard from "../components/InfoCard.astro";
         </div>
     </section> -->
 
+<<<<<<< HEAD
   <section class="max-container py-12 rounded-2xl max-sm:px-2">
     <h3
       class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
@@ -155,6 +218,29 @@ import InfoCard from "../components/InfoCard.astro";
       }
     </ul>
   </section>
+=======
+    
+    <section class="max-container py-12 rounded-2xl max-sm:px-2" id="market">
+        <h3
+            class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
+        >
+            Markets we serve
+        </h3>
+        <ul
+            class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:grid-cols-1"
+        >
+            {
+                industry.map((card) => (
+                    <InfoCard
+                        name={card.name}
+                        imagePath={card.imagePath}
+                        altText={card.altText}
+                    />
+                ))
+            }
+        </ul>
+    </section>
+>>>>>>> ba3e9cf (Update about us page links)
 
   <Subscribe />
 </Layout>
