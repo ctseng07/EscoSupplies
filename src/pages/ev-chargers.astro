@@ -24,17 +24,35 @@ import Subscribe from "../components/Subscribe.astro";
 
         <div class="bg-white rounded-2xl p-4 shadow-2xl">
           <div class="flex-col flex gap-2">
-            <p class="text-[--red] font-bold">We're here to help</p>
-            <h3>Contact for more info</h3>
-            <div class="flex max-lg:py-4 gap-4 max-md:items-start max-md:w-full items-center max-md:px-4">
+            <p class="text-[--red] font-bold max-md:text-center">
+              We're here to help
+            </p>
+            <h3 class="max-md:text-center max-md:text-2xl">
+              Contact for more info
+            </h3>
+            <div
+              class="flex max-lg:py-4 gap-4 max-md:w-full items-center max-md:px-4 flex-wrap max-md:justify-center"
+            >
               <a href="tel:888-989-3726">
-                <button class="rounded-full bg-[--red] p-2 text-xs text-white flex items-center gap-2 py-1 px-2 hover:bg-white hover:text-black hover:border-[--red] border"><span class="material-symbols-outlined text-base"> call</span>888.989.ESCO</button>
+                <button
+                  class="rounded-full bg-[--red] p-2 text-white flex items-center gap-2 py-1 px-2 hover:bg-white hover:text-black hover:border-[--red] border"
+                  ><span class="material-symbols-outlined text-base">call</span>
+                  <p class="font-normal text-xs max-sm:hidden">888.989.ESCO</p>
+                </button>
               </a>
-      
+
               <a href="mailto: info@escosupplies.com.com">
-                <button class="rounded-full border-[--red] py-1 px-2 text-xs flex border items-center gap-2 hover:bg-[--red] hover:text-white"><span class="material-symbols-outlined text-base"> mail</span> info@escosupplies.com</button>
+                <button
+                  class="rounded-full border-[--red] py-1 px-2 flex border items-center gap-2 hover:bg-[--red] hover:text-white"
+                  ><span class="material-symbols-outlined text-base">
+                    mail</span
+                  >
+                  <p class="font-normal text-xs max-sm:hidden">
+                    info@escosupplies.com
+                  </p>
+                </button>
               </a>
-              </div>
+            </div>
           </div>
         </div>
       </ul>
