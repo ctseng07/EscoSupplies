@@ -35,8 +35,10 @@ import Subscribe from "../components/Subscribe.astro";
   <section
     class="flex flex-col px-2 items-center gap-16 mb-6 py-6 max-sm:py-0 max-container"
   >
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <a href="/lighting">
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 h-full grid-rows-1 md:grid-rows-2 lg:grid-rows-1"
+    >
+      <a href="/lighting" class="lg:h-[31rem] h-full">
         <div
           class="hover:scale-110 hover:text-[var(--red)] h-full cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
@@ -49,7 +51,7 @@ import Subscribe from "../components/Subscribe.astro";
         </div>
       </a>
 
-      <a href="/ptacs">
+      <a href="/ptacs" class="lg:h-[31rem]">
         <div
           class="hover:scale-110 hover:text-[var(--red)] h-full cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
