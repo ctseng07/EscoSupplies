@@ -2,12 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import {
-  about,
-  category1,
-  category2,
-  category3,
-  category4,
-  category5,
+    about,
+    category1,
+    category2,
+    category3,
+    category4,
+    category5,
 } from "../images";
 import Subscribe from "../components/Subscribe.astro";
 import category from "../data/category.json";
@@ -16,13 +16,9 @@ import InfoCard from "../components/InfoCard.astro";
 ---
 
 <Layout title="Esco Supplies">
-    <section class="overflow-hidden rounded-2xl max-xl:mx-2">
-        <div class="relative overflow-hidden bg-[--dark] min-h-[30vh] md:min-h-[50vh]">
-            <Image
-                src={about}
-                alt="about bg"
-                class="w-full absolute border-none object-cover"
-            />
+    <section class="overflow-hidden">
+        <div class="relative overflow-hidden rounded-none">
+            <Image src={about} alt="about bg" class="w-full object-cover" />
         </div>
         <div class="flex justify-center text-white bg-[--dark] px-4 py-6">
             <div class="max-container w-full flex justify-between">
@@ -46,35 +42,42 @@ import InfoCard from "../components/InfoCard.astro";
                   ></a
                     > -->
                     <p>/</p>
-                    <a 
-                    class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition" href="#market"
-                    aria-current="page">
-                    <span
-                    class="transition-all duration-500 ease-out capitalize"
-                    >markets</span
-                  ></a
+                    <a
+                        class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition"
+                        href="#market"
+                        aria-current="page"
+                    >
+                        <span
+                            class="transition-all duration-500 ease-out capitalize"
+                            >markets</span
+                        ></a
                     >
                     <p>/</p>
                     <a
-                        class="hover:text-[--gray]"
+                        class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition"
                         href="/ev-chargers"
+                        aria-current="page"
                     >
-                       EV Chargers</a
+                        <span
+                            class="transition-all duration-500 ease-out capitalize"
+                            >ev chargers</span
+                        ></a
                     >
                     <p>/</p>
                     <a
-                        class="hover:text-[--gray]"
+                        class="hover:text-[--gray] block py-2 px-3 lg:p-0 group transition-all duration-300 ease-in-out hover:-translate-y-1 x-transition"
                         href="/ptacs"
+                        aria-current="page"
                     >
-                        PTACs</a
+                        <span class="transition-all duration-500 ease-out"
+                            >PTACs</span
+                        ></a
                     >
                 </div>
                 <h2 class="max-xl:text-3xl">About Esco Supplies</h2>
             </div>
         </div>
-      </div>
-    </div>
-
+    </section>
 
     <!-- <div class="my-8 max-container"> id="#aboutUs">
             <div class="rounded-2xl md:w-full p-8 max-sm:p-2 my-8 bg-[--dark]">
@@ -130,11 +133,10 @@ import InfoCard from "../components/InfoCard.astro";
                 </div>
             </div>
         </div> -->
-  </section>
 
-  <!-- Search By Category Section -->
+    <!-- Search By Category Section -->
 
-  <!-- <section class="px-2">
+    <!-- <section class="px-2">
         <div class="max-container bg-[--light-gray] p-12 rounded-2xl max-sm:px-4">
             <h3
                 class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
@@ -157,8 +159,8 @@ import InfoCard from "../components/InfoCard.astro";
             </ul>
         </div>
     </section> -->
-    
-    <section class="max-container py-12 rounded-2xl max-sm:px-2" id="market">
+
+    <section class="max-container py-12 px-2" id="market">
         <h3
             class="text-center mb-6 uppercase max-sm:text-2xl max-lg:px-2 text-[--red]"
         >
@@ -179,11 +181,10 @@ import InfoCard from "../components/InfoCard.astro";
         </ul>
     </section>
 
-  <Subscribe />
+    <Subscribe />
 </Layout>
-
 <style>
-  * {
-    /* border: 1px solid red; */
-  }
+    * {
+        /* border: 1px solid red; */
+    }
 </style>
