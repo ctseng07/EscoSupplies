@@ -20,6 +20,7 @@ export { default as company18 } from "./company18.png";
 export { default as company19 } from "./company19.png";
 export { default as company20 } from "./company20.png";
 export { default as company21 } from "./company21.png";
+export { default as company22 } from "./company22.png";
 export { default as lnp } from "./Lnp.png";
 
 export { default as areaLight } from "./areaLight.png";

@@ -1,24 +1,21 @@
 ---
-import CompanyCard from "./CompanyCard.astro"
+import CompanyCard from "./CompanyCard.astro";
 import companies from "../data/companies.json";
 ---
 
-
-
 <section class="px-2 mb-6">
     <div class="max-container p-8 rounded-2xl max-sm:px-2 bg-[--light-gray]">
-         <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
-             {
-                 companies.map((card) => (
-                     <CompanyCard
-                         imagePath={card.imagePath}
-                         altText={card.altText}
-                         alt={card.alt}
-                     extraClasses={card.extraClasses}
- 
-                     />
-                 ))
-             }
-         </ul>
-         </div>
-     </section>
+        <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 cursor-pointer">
+            {
+                companies.map((card) => (
+                    <CompanyCard
+                        imagePath={card.imagePath}
+                        altText={card.altText}
+                        extraClasses={card.extraClasses}
+                        link={card.link}
+                    />
+                ))
+            }
+        </ul>
+    </div>
+</section>
