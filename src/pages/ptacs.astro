@@ -3,7 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import ptacData from "../data/ptacs.json";
 import CategoryCard from "../components/CategoryCard.astro";
 import Subscribe from "../components/Subscribe.astro";
-import Brands from "../components/Brands.astro";
+import CompanyCard from "../components/CompanyCard.astro";
+import ptacCompanies from "../data/ptacCompanies.json";
+const verdant = {
+  imagePath: "/src/images/verdant.png",
+  altText: "verdant",
+  extraClasses: "hover:scale-110 cursor-pointer h-[250px]",
+  link: "https://verdant.copeland.com/products/thermostats/",
+};
 ---
 
 <Layout title="Esco Supplies">
@@ -38,7 +45,9 @@ import Brands from "../components/Brands.astro";
                 <button
                   class="rounded-full bg-[--red] p-2 text-white flex items-center gap-2 py-1 px-2 hover:bg-white hover:text-black hover:border-[--red] border"
                   ><span class="material-symbols-outlined text-base">call</span>
-                  <p class="font-normal text-xs max-sm:hidden">(253) 850-6055</p>
+                  <p class="font-normal text-xs max-sm:hidden">
+                    (253) 850-6055
+                  </p>
                 </button>
               </a>
 
@@ -60,7 +69,30 @@ import Brands from "../components/Brands.astro";
     </div>
   </section>
 
-  <Brands />
+  <section class="px-2 mb-6">
+    <div class="max-container p-8 rounded-2xl max-sm:px-2 bg-[--light-gray]">
+      <ul
+        class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 cursor-pointer"
+      >
+        {
+          ptacCompanies.map((card) => (
+            <CompanyCard
+              imagePath={card.imagePath}
+              altText={card.altText}
+              extraClasses={card.extraClasses}
+              link={card.link}
+            />
+          ))
+        }
+        <CompanyCard
+          imagePath={verdant.imagePath}
+          altText={verdant.altText}
+          extraClasses={verdant.extraClasses}
+          link={verdant.link}
+        />
+      </ul>
+    </div>
+  </section>
   <Subscribe />
 </Layout>
 
