@@ -6,7 +6,7 @@ export { default as company4 } from "./company4.png";
 export { default as company5 } from "./company5.png";
 export { default as company6 } from "./company6.png";
 export { default as company7 } from "./company7.png";
-export { default as company8 } from "./company8.png";
+export { default as amana } from "./amana.png";
 export { default as company9 } from "./company9.png";
 export { default as company10 } from "./company10.png";
 export { default as company11 } from "./company11.png";
@@ -53,26 +53,22 @@ export { default as lights } from "./lights.png";
 export { default as ev } from "./ev.png";
 export { default as ptac } from "./ptac.png";
 
+export { default as category1 } from "./category1.png";
+export { default as category2 } from "./category2.png";
+export { default as category3 } from "./category3.png";
+export { default as category4 } from "./category4.png";
+export { default as category5 } from "./category5.png";
 
-export { default as category1 } from './category1.png';
-export { default as category2 } from './category2.png';
-export { default as category3 } from './category3.png';
-export { default as category4 } from './category4.png';
-export { default as category5 } from './category5.png';
+export { default as indoor1 } from "./indoor1.png";
+export { default as indoor2 } from "./indoor2.png";
+export { default as indoor3 } from "./indoor3.png";
+export { default as indoor4 } from "./indoor4.png";
+export { default as indoor5 } from "./indoor5.png";
+export { default as indoor6 } from "./indoor6.png";
 
-export { default as indoor1 } from './indoor1.png';
-export { default as indoor2 } from './indoor2.png';
-export { default as indoor3 } from './indoor3.png';
-export { default as indoor4 } from './indoor4.png';
-export { default as indoor5 } from './indoor5.png';
-export { default as indoor6 } from './indoor6.png';
-
-export { default as industry1 } from './industry1.png';
-export { default as industry2 } from './industry2.png';
-export { default as industry3 } from './industry3.png';
-export { default as industry4 } from './industry4.png';
-export { default as industry5 } from './industry5.png';
-export { default as industry6 } from './industry6.png';
-
-
-
+export { default as industry1 } from "./industry1.png";
+export { default as industry2 } from "./industry2.png";
+export { default as industry3 } from "./industry3.png";
+export { default as industry4 } from "./industry4.png";
+export { default as industry5 } from "./industry5.png";
+export { default as industry6 } from "./industry6.png";
