@@ -1,130 +1,129 @@
 [
-    {
-      "imagePath": "/src/images/company1.png",
-      "altText": "green creative",
-      "extraClasses": "h-full hover:scale-110 cursor-pointer",
-      "link": "https://greencreative.com/"
-    },
-    {
-      "imagePath": "/src/images/company2.png",
-      "altText": "nuvo lighting",
-      "extraClasses": "h-full hover:scale-110 cursor-pointer",
-      "link": "https://nuvolightinglights.com/"
-    },
-    {
-      "imagePath": "/src/images/Lnp.png",
-      "altText": "lights n plastics",
-      "extraClasses": "p-2 h-full bg-white hover:scale-110 cursor-pointer",
-      "link": "https://lightsnplastics.com/"
-    },
-    {
-      "imagePath": "/src/images/company4.png",
-      "altText": "efficient lighting",
-      "extraClasses": "h-full hover:scale-110 cursor-pointer",
-      "link": "https://efficientlightingco.com/"
-    },
-    {
-      "imagePath": "/src/images/company5.png",
-      "altText": "sloan led",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://sloanled.com/"
-    },
-    {
-      "imagePath": "/src/images/company6.png",
-      "altText": "satco",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.satco.com/"
-    },
-    {
-      "imagePath": "/src/images/company7.png",
-      "altText": "cree",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.creelighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company8.png",
-      "altText": "amana",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.amanaparts.com/"
-    },
-    {
-      "imagePath": "/src/images/company9.png",
-      "altText": "brownlee lighting",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.brownlee.com/"
-    },
-  
-    {
-      "imagePath": "/src/images/company10.png",
-      "altText": "dura guard",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://duraguard.com/"
-    },
-    {
-      "imagePath": "/src/images/company11.png",
-      "altText": "eiko certified green",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.eiko.com/"
-    },
-    {
-      "imagePath": "/src/images/company12.png",
-      "altText": "eti",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.etissl.com/"
-    },
-    {
-      "imagePath": "/src/images/company13.png",
-      "altText": "feit electric",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.feit.com/"
-    },
-    {
-      "imagePath": "/src/images/company14.png",
-      "altText": "focus lighting",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.focuslighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company15.png",
-      "altText": "hatch",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.hatchlighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company16.png",
-      "altText": "lightronics",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.lightronics.com/"
-    },
-    {
-      "imagePath": "/src/images/company17.png",
-      "altText": "lumitec",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.lumiteclighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company18.png",
-      "altText": "royal pacific",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.rplighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company19.png",
-      "altText": "tcp",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.tcpi.com/"
-    },
-    {
-      "imagePath": "/src/images/company20.png",
-      "altText": "venture lighting",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.venturelighting.com/"
-    },
-    {
-      "imagePath": "/src/images/company21.png",
-      "altText": "wave lighting",
-      "extraClasses": "hover:scale-110 cursor-pointer",
-      "link": "https://www.wavelighting.com/"
-    }
-  ]
-  
+  {
+    "imagePath": "/src/images/company1.png",
+    "altText": "green creative",
+    "extraClasses": "h-full hover:scale-110 cursor-pointer",
+    "link": "https://greencreative.com/"
+  },
+  {
+    "imagePath": "/src/images/company2.png",
+    "altText": "nuvo lighting",
+    "extraClasses": "h-full hover:scale-110 cursor-pointer",
+    "link": "https://nuvolightinglights.com/"
+  },
+  {
+    "imagePath": "/src/images/Lnp.png",
+    "altText": "lights n plastics",
+    "extraClasses": "p-2 h-full bg-white hover:scale-110 cursor-pointer",
+    "link": "https://lightsnplastics.com/"
+  },
+  {
+    "imagePath": "/src/images/company4.png",
+    "altText": "efficient lighting",
+    "extraClasses": "h-full hover:scale-110 cursor-pointer",
+    "link": "https://efficientlightingco.com/"
+  },
+  {
+    "imagePath": "/src/images/company5.png",
+    "altText": "sloan led",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://sloanled.com/"
+  },
+  {
+    "imagePath": "/src/images/company6.png",
+    "altText": "satco",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.satco.com/"
+  },
+  {
+    "imagePath": "/src/images/company7.png",
+    "altText": "cree",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.creelighting.com/"
+  },
+  {
+    "imagePath": "/src/images/amana.png",
+    "altText": "amana",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.amana-ptac.com"
+  },
+  {
+    "imagePath": "/src/images/company9.png",
+    "altText": "brownlee lighting",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.brownlee.com/"
+  },
+
+  {
+    "imagePath": "/src/images/company10.png",
+    "altText": "dura guard",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://duraguard.com/"
+  },
+  {
+    "imagePath": "/src/images/company11.png",
+    "altText": "eiko certified green",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.eiko.com/"
+  },
+  {
+    "imagePath": "/src/images/company12.png",
+    "altText": "eti",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.etissl.com/"
+  },
+  {
+    "imagePath": "/src/images/company13.png",
+    "altText": "feit electric",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.feit.com/"
+  },
+  {
+    "imagePath": "/src/images/company14.png",
+    "altText": "focus lighting",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.focuslighting.com/"
+  },
+  {
+    "imagePath": "/src/images/company15.png",
+    "altText": "hatch",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.hatchlighting.com/"
+  },
+  {
+    "imagePath": "/src/images/company16.png",
+    "altText": "lightronics",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.lightronics.com/"
+  },
+  {
+    "imagePath": "/src/images/company17.png",
+    "altText": "lumitec",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.lumiteclighting.com/"
+  },
+  {
+    "imagePath": "/src/images/company18.png",
+    "altText": "royal pacific",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.rplighting.com/"
+  },
+  {
+    "imagePath": "/src/images/company19.png",
+    "altText": "tcp",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.tcpi.com/"
+  },
+  {
+    "imagePath": "/src/images/company20.png",
+    "altText": "venture lighting",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.venturelighting.com/"
+  },
+  {
+    "imagePath": "/src/images/company21.png",
+    "altText": "wave lighting",
+    "extraClasses": "hover:scale-110 cursor-pointer",
+    "link": "https://www.wavelighting.com/"
+  }
+]
