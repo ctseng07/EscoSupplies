@@ -13,12 +13,12 @@ if (!images[imagePath])
 ---
 
 <li>
-  <div class=`card bg-white flex items-center ${extraClasses}`>
+  <div class=`card bg-white flex items-center justify-center ${extraClasses}`>
     <a href={link}>
       <Image
         src={images[imagePath]()}
         alt={altText}
-        class="object-cover w-full rounded-2xl"
+        class="w-full rounded-2xl"
       />
     </a>
   </div>
@@ -27,6 +27,8 @@ if (!images[imagePath])
 <style>
   img {
     height: 100%;
+    max-height: 170px;
+    object-fit: cover;
   }
 
   * {

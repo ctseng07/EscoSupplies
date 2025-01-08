@@ -5,6 +5,7 @@ import CategoryCard from "../components/CategoryCard.astro";
 import Subscribe from "../components/Subscribe.astro";
 import CompanyCard from "../components/CompanyCard.astro";
 import ptacCompanies from "../data/ptacCompanies.json";
+import companies from "../data/companies.json";
 const verdant = {
   imagePath: "/src/images/verdant.png",
   altText: "verdant",
@@ -69,7 +70,7 @@ const verdant = {
     </div>
   </section>
 
-  <section class="px-2 mb-6">
+  <!-- <section class="px-2 mb-6">
     <div class="max-container p-8 rounded-2xl max-sm:px-2 bg-[--light-gray]">
       <ul
         class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 cursor-pointer"
@@ -90,6 +91,27 @@ const verdant = {
           extraClasses={verdant.extraClasses}
           link={verdant.link}
         />
+      </ul>
+    </div>
+  </section> -->
+
+  <section class="px-2 mb-6">
+    <div class="max-container p-8 rounded-2xl max-sm:px-2 bg-[--light-gray]">
+      <ul
+        class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 cursor-pointer"
+      >
+        {
+          companies
+            .filter((card) => card.category == "ptac")
+            .map((card) => (
+              <CompanyCard
+                imagePath={card.imagePath}
+                altText={card.altText}
+                extraClasses={card.extraClasses}
+                link={card.link}
+              />
+            ))
+        }
       </ul>
     </div>
   </section>

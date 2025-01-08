@@ -8,7 +8,7 @@
   {
     "imagePath": "/src/images/ge.png",
     "altText": "ge",
-    "extraClasses": "hover:scale-110 cursor-pointer p-12",
+    "extraClasses": "hover:scale-110 cursor-pointer p-2 max-h-[172px]",
     "link": "https://www.geappliancesairandwater.com/air-products/light-commercial-air-conditioners/package-terminal-air-conditioners-ptac/#/filter:brand:GE"
   },
   {
